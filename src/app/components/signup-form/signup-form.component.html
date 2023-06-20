@@ -1,0 +1,103 @@
+<form [formGroup]="signUpForm" (ngSubmit)="save()">
+  <div class="login-form">
+    <h2>{{ "personalData.name" | translate | uppercase }}</h2>
+    <mat-form-field appearance="fill">
+      <!-- <mat-label>Insert your name</mat-label> -->
+      <input
+        matInput
+        placeholder="Name"
+        formControlName="first_name"
+        required
+      />
+      <mat-error *ngIf="first_name.invalid">{{
+        getErrorMessageName()
+      }}</mat-error>
+    </mat-form-field>
+    <h2>{{ "personalData.lastName" | translate | uppercase }}</h2>
+    <mat-form-field appearance="fill">
+      <!-- <mat-label>Insert your surname</mat-label> -->
+      <input
+        matInput
+        placeholder="Surname"
+        formControlName="last_name"
+        required
+      />
+      <mat-error *ngIf="last_name.invalid">{{
+        getErrorMessageSurname()
+      }}</mat-error>
+    </mat-form-field>
+    <h2>{{ "login.email" | translate }}</h2>
+    <mat-form-field appearance="fill">
+      <!-- <mat-label>Enter your email</mat-label> -->
+      <input
+        matInput
+        placeholder="pat@example.com"
+        formControlName="email"
+        required
+      />
+      <mat-error *ngIf="email.invalid">{{ getErrorMessageEmail() }}</mat-error>
+    </mat-form-field>
+    <h2>{{ "login.telephone" | translate }}</h2>
+    <mat-form-field appearance="fill">
+      <!-- <mat-label>Enter your email</mat-label> -->
+      <input matInput placeholder="Telephone" formControlName="telephone" />
+      <!-- <mat-error *ngIf="telephone.invalid">{{
+        getErrorMessageTelephone()
+      }}</mat-error> -->
+    </mat-form-field>
+    <h2>{{ "login.password" | translate }}</h2>
+    <mat-form-field appearance="fill">
+      <!-- <mat-label>Enter your password</mat-label> -->
+      <input
+        matInput
+        [type]="hide ? 'password' : 'text'"
+        formControlName="password"
+        required
+      />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="hide = !hide"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide"
+      >
+        <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+      <mat-error *ngIf="password.invalid">{{
+        getErrorMessagePassword()
+      }}</mat-error>
+    </mat-form-field>
+
+    <h2>{{ "personalData.birdthDate" | translate | uppercase }}</h2>
+    <mat-form-field appearance="fill">
+      <!-- <mat-label>Select your date of birth</mat-label> -->
+      <input
+        matInput
+        [matDatepicker]="picker"
+        formControlName="birth_date"
+        required
+        (dateChange)="dateChanged($event)"
+      />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-error *ngIf="birth_date.invalid">{{
+        getErrorMessageBirthDate()
+      }}</mat-error>
+    </mat-form-field>
+
+    <div class="checkbox-container">
+      <input
+        type="checkbox"
+        formControlName="acceptAgreement"
+        id="acceptAgreement"
+        required
+      />
+      <label for="acceptAgreement"> I agree to the terms and conditions</label>
+      <mat-error *ngIf="!acceptAgreement.value">{{
+        getErrorMessageAccept()
+      }}</mat-error>
+    </div>
+
+    <button type="submit" class="add-button">SIGNUP</button>
+  </div>
+</form>

@@ -1,0 +1,31 @@
+<footer id="footer">
+    <div class="footer__top">
+        <nav>
+            <div *ngFor="let item of menu" class="footer__top__list">
+                <header>{{ item.header | translate }}</header>
+                <div *ngFor="let subItem of item.list">
+                    <a (click)="goTo(subItem.path)">{{ subItem.anchor | translate}}</a>
+                </div>
+            </div>
+        </nav>
+        <div class="social-container">
+            <!-- <a class="icon" href="#">
+                <mat-icon svgIcon="facebook"></mat-icon>
+            </a>
+            <a class="icon" href="#">
+                <mat-icon svgIcon="instagram"></mat-icon>
+            </a>
+            <a class="icon" href="#">
+                <mat-icon svgIcon="youtube"></mat-icon>
+            </a> -->
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p class="flag-container">
+            IT <img src="../../../assets/images/icons/it.svg" class="flag" alt="Italian" (click)="changeLanguageIt()"
+                value="it" />
+            EN <img src="../../../assets/images/icons/gb.svg" (click)="changeLanguageEn()" class="flag" alt="English" />
+        </p>
+        <small class="bottom-text">&copy; {{ "footer.bottom" | translate }}</small>
+    </div>
+</footer>

@@ -1,0 +1,49 @@
+<form [formGroup]="addAddressForm" (ngSubmit)="submitForm()">
+  <h2 mat-dialog-title class="title">Add a new address</h2>
+  <mat-dialog-content class="mat-typography form-fields-container">
+    <mat-form-field appearance="outline">
+      <mat-label>Label</mat-label>
+      <input matInput placeholder="" formControlName="label" />
+      <mat-icon matSuffix fontIcon="label"></mat-icon>
+      <mat-hint>Home, Office...</mat-hint>
+    </mat-form-field>
+    <!-- Continue like this with these fields: Full name, Address, ZipCode, Telephone, Country, Delivery instructions -->
+    <mat-form-field appearance="outline">
+      <mat-label>Full name</mat-label>
+      <input matInput placeholder="" formControlName="name_surname" />
+      <mat-icon matSuffix fontIcon="account_box"></mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Address</mat-label>
+      <input matInput placeholder="" formControlName="street_address" />
+      <mat-icon matSuffix fontIcon="home"></mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>ZipCode</mat-label>
+      <input matInput placeholder="" formControlName="zipcode" />
+      <mat-icon matSuffix fontIcon="code"></mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Telephone</mat-label>
+      <input matInput placeholder="" formControlName="telephone" />
+      <mat-icon matSuffix fontIcon="phone"></mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Country</mat-label>
+      <input matInput placeholder="" formControlName="country" />
+      <mat-icon matSuffix fontIcon="place"></mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Delivery instructions</mat-label>
+      <input matInput placeholder="" formControlName="instructions" />
+      <mat-icon matSuffix fontIcon="text_fields"></mat-icon>
+      <mat-hint>Leave the parcel at the front door... </mat-hint>
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial type="submit">
+      Add
+    </button>
+  </mat-dialog-actions>
+</form>

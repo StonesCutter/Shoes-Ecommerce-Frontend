@@ -1,0 +1,202 @@
+@import "../../../style/common/variables.scss";
+
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar {
+  height: 80px;
+  background-color: white;
+}
+
+.hamburger-menu {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.header-menu {
+  height: 80px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  min-width: 60%;
+  display: flex;
+  line-height: 100px;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 1.5rem;
+  }
+}
+
+.nav-links a:hover {
+  background-color: #ee6317;
+  cursor: pointer;
+  color: white;
+  // height: 90px;
+}
+.logo {
+  width: 130px;
+  img {
+    width: 100%;
+  }
+}
+
+.header-menu-link {
+  background-color: #ee6317;
+  cursor: pointer;
+  color: white;
+}
+
+.user-icon {
+  background-image: url("../../../assets/images/header/Sample_User_Icon.png");
+  background-repeat: no-repeat;
+  background-size: contain; /* Adjust as needed */
+  background-color: white;
+  border: none; /* Remove default button border */
+  padding: 0; /* Remove any padding */
+  width: 20px; /* Set the width of the button to match the image */
+  height: 20px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.cart-icon {
+  background-image: url("../../../assets/images/header/shopping-cart-20392.png");
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: contain; /* Adjust as needed */
+  border: none; /* Remove default button border */
+  padding: 0; /* Remove any padding */
+  width: 20px; /* Set the width of the button to match the image */
+  height: 20px;
+  cursor: pointer;
+}
+
+.small-logo {
+  width: 60px;
+  img {
+    width: 100%;
+  }
+}
+.sidenav-container {
+  height: 100vh;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+
+.sidenav {
+  width: 100%; /* Adjust the width as needed */
+}
+
+.input-full-width {
+  padding: 10px;
+  width: 100%;
+}
+
+.logo :hover {
+  cursor: pointer;
+}
+
+.accordion {
+  // border: 2px solid red;
+  padding: 2% 0;
+  min-width: 400px;
+  // max-width: 400px;
+
+  &__title {
+    font-size: $small;
+    color: $grey-footer;
+  }
+
+  &__answer {
+    font-size: $small;
+    line-height: 1.5;
+    // padding-top: 0.7rem;
+    color: $grey-footer;
+  }
+
+  &__summary {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
+  &__details {
+    margin-top: 1.8rem;
+  }
+}
+
+.add-button {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  background-color: #000000;
+  cursor: pointer;
+  color: white;
+  width: 90%;
+  height: 2%;
+  padding: 1rem 4rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.add-button:hover {
+  color: white;
+  background-color: rgb(66, 66, 66);
+}
+
+.login-signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  .accordion {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+}
+
+.checkout-product {
+  color: grey;
+  font-size: small;
+
+  .__image {
+    margin-right: 2rem;
+  }
+
+  img {
+    width: 8rem;
+  }
+
+  .__price {
+    font-size: small;
+    margin-bottom: 0.7rem;
+  }
+
+  .__price,
+  .__color-size,
+  .__quantity {
+    font-weight: 700;
+  }
+
+  .__name,
+  .__color-size,
+  .__quantity {
+    margin-bottom: 0.4rem;
+  }
+
+  .__color-size {
+    div:first-child {
+      margin-right: 2rem;
+    }
+  }
+}

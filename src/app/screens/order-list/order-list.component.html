@@ -1,0 +1,13 @@
+<div class="orders-wrapper">
+  <div *ngIf="isLoading" class="spinner">
+    <mat-spinner diameter="50"></mat-spinner>
+  </div>
+  <ul *ngIf="!isLoading">
+    <li *ngFor="let order of orders">
+      <app-order-list-accordion
+        [order]="order"
+        [user]="user"
+      ></app-order-list-accordion>
+    </li>
+  </ul>
+</div>

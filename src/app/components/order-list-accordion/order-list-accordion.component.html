@@ -1,0 +1,61 @@
+<div class="container__accordion">
+  <!-- <Accordion class="accordion" sx={{ boxShadow: "none" }}> -->
+  <mat-accordion class="accordion__summary">
+    <!-- <AccordionSummary
+        expandIcon={<ExpandMoreIcon />}
+        aria-controls="panel1a-content"
+        id="panel1a-header"
+        class="accordion__summary"
+      > -->
+    <!-- <mat-expansion-panel-header></mat-expansion-panel-header> -->
+
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header class="panel-header">
+          <div class="accordion__summary--wrapper">
+            <div class="accordion__info">
+              <h3>{{ "orderList.order" | translate }}:</h3>
+              <p>{{ order.orderId }}</p>
+            </div>
+            <div class="accordion__info">
+              <h3>{{ "orderList.orderer" | translate }}:</h3>
+              <p>
+                {{ user.first_name }}
+                {{ user.last_name }}
+              </p>
+            </div>
+            <div class="accordion__info">
+              <h3>{{ "orderList.products" | translate }}:</h3>
+              <p>{{ order.productList.length }}</p>
+            </div>
+            <div class="accordion__info">
+              <h3>{{ "orderList.total" | translate }}:</h3>
+              <p>{{ order.paidTotalPrice | currency : "EUR" }}</p>
+            </div>
+          </div>
+        </mat-expansion-panel-header>
+        <ul *ngFor="let product of order.productList">
+          <li class="accordion__list">
+            <div class="accordion__details">
+              <div>
+                <img src="{{ product.image }}" alt="product" />
+                <h4>{{ product.name }}</h4>
+              </div>
+            </div>
+            <div class="accordion__details">
+              <h4>{{ product.brand }}</h4>
+            </div>
+
+            <div class="accordion__details">
+              <p>{{ "orderList.size" | translate }}: EU {{ product.size }}</p>
+            </div>
+
+            <div class="accordion__details--price">
+              <p>{{ product.paidItemTotalPrice | currency : "EUR" }}</p>
+            </div>
+          </li>
+        </ul>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-accordion>
+</div>

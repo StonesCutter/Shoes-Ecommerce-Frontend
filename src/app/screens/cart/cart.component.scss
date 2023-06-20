@@ -1,0 +1,98 @@
+.cart-container {
+  background-color: #fbfbfb;
+  padding-top: 10px;
+  min-height: 500px;
+}
+
+.cart-sub-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.coupon-code {
+  width: 90%;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  .example-full-width {
+    width: 90%;
+  }
+}
+
+.products-container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  p,
+  .example-full-width {
+    margin-left: 10px;
+  }
+}
+
+.product-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info-cards {
+  width: 300px;
+  margin-bottom: 20px;
+  .payment-underline {
+    display: block;
+    margin: 10px auto;
+    bottom: 1rem;
+    height: 2px;
+    width: 60%;
+    background-color: black;
+  }
+}
+
+.order {
+  background-color: #2d2d2d;
+  color: white;
+  div {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+  }
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 50px 0;
+  }
+}
+
+.order-underline {
+  display: block;
+  margin: 10px auto;
+  bottom: 1rem;
+  height: 2px;
+  width: 60%;
+  background-color: #fff;
+}
+
+.info-cards-box {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.shipment-method {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.payment-method {
+  width: 90%;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    margin: 30px 0;
+  }
+}

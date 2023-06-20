@@ -1,0 +1,273 @@
+<div class="container">
+  <mat-toolbar class="toolbar">
+    <button
+      mat-icon-button
+      (click)="sidenav.toggle(); toggleSideNav()"
+      fxShow="true"
+      fxHide.gt-md
+      class="hamburger-menu"
+    >
+      <mat-icon *ngIf="!isVisible">menu</mat-icon>
+      <mat-icon *ngIf="isVisible">close</mat-icon>
+    </button>
+
+    <div class="header-menu">
+      <div class="logo" fxHide="true" fxShow.gt-md>
+        <img
+          src="../../../assets/images/header/belle-scarpe-logo.png"
+          routerLink="/{{ currentLanguage }}"
+        />
+      </div>
+      <div class="small-logo" fxShow="true" fxHide.gt-md>
+        <img
+          src="../../../assets/images/header/download.png"
+          routerLink="/{{ currentLanguage }}"
+        />
+      </div>
+      <div fxHide="true" fxShow.gt-md class="nav-links" *ngIf="!inputFocused">
+        <!-- Man Menu -->
+        <a mat-button [matMenuTriggerFor]="manMenu">{{
+          "header.man" | translate | uppercase
+        }}</a>
+        <mat-menu #manMenu="matMenu">
+          <a
+            class="header-menu-link"
+            mat-menu-item
+            *ngFor="let category of categories | async"
+            [routerLink]="getCategoryLink(category.code, 'uomo')"
+            (click)="updateCategory(category.code)"
+          >
+            {{ category.code | uppercase }}
+          </a>
+        </mat-menu>
+
+        <!-- Woman Menu -->
+        <a mat-button [matMenuTriggerFor]="womanMenu">{{
+          "header.woman" | translate | uppercase
+        }}</a>
+        <mat-menu #womanMenu="matMenu">
+          <a
+            class="header-menu-link"
+            mat-menu-item
+            *ngFor="let category of categories | async"
+            [routerLink]="getCategoryLink(category.code, 'donna')"
+            (click)="updateCategory(category.code)"
+          >
+            {{ category.code | uppercase }}
+          </a>
+        </mat-menu>
+
+        <!-- Unisex Menu -->
+        <a mat-button [matMenuTriggerFor]="unisexMenu">UNISEX</a>
+        <mat-menu #unisexMenu="matMenu">
+          <a
+            class="header-menu-link"
+            mat-menu-item
+            *ngFor="let category of categories | async"
+            [routerLink]="getCategoryLink(category.code, 'unisex')"
+            (click)="updateCategory(category.code)"
+          >
+            {{ category.code | uppercase }}
+          </a>
+        </mat-menu>
+
+        <a href="#" mat-button routerLink="/brand">{{
+          "header.brands" | translate | uppercase
+        }}</a>
+        <a href="#" mat-button>{{ "header.new" | translate | uppercase }}</a>
+      </div>
+      <!-- <mat-form-field [ngClass]="inputFocused ? 'input-full-width' : 'small-width-input'" style="margin-top: 20px">
+        <input matInput placeholder="Search" (focus)="wideInput()" (blur)="smallInput()" />
+      </mat-form-field> -->
+      <mat-form-field
+        [ngClass]="inputFocused ? 'input-full-width' : 'small-width-input'"
+        style="margin-top: 20px"
+      >
+        <input
+          matInput
+          placeholder="Search"
+          #searchInput
+          (keyup.enter)="onSearch(searchInput.value)"
+          (focus)="wideInput()"
+          (blur)="smallInput()"
+        />
+      </mat-form-field>
+
+      <div>
+        <button class="cart-icon" [matMenuTriggerFor]="cartMenu"></button>
+        <mat-menu #cartMenu="matMenu" class="mat-menu">
+          <h2>Carrello:</h2>
+          <div class="__container">
+            <article class="checkout-product" *ngFor="let product of products">
+              <div class="__image">
+                <img src="{{ product.image }}" alt="" />
+              </div>
+              <div class="__info">
+                <div class="__price">
+                  PRICE: {{ product.sellingItemTotalPrice | currency : "EUR" }}
+                </div>
+                <div class="__name">NAME: {{ product.name }}</div>
+                <div class="__color-size">
+                  <div>SIZE: {{ product.size }}</div>
+                </div>
+                <div>
+                  QUANTITY
+                  <span class="__quantity">{{ product.quantity }}</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <h3>Totale: {{ cartTotal | currency : "EUR" }}</h3>
+          <nav>
+            <app-button
+              (click)="goToCart()"
+              [buttonStyle]="'default-button'"
+              label="CARRELLO"
+            ></app-button>
+          </nav>
+        </mat-menu>
+        <!-- <button class="user-icon"></button> -->
+        <button class="user-icon" [matMenuTriggerFor]="userMenu"></button>
+        <mat-menu #userMenu="matMenu">
+          <nav>
+            <button mat-menu-item routerLink="/area-personale/">
+              <mat-icon>account_circle</mat-icon>
+              Account
+            </button>
+            <button mat-menu-item routerLink="/area-personale/lista-desideri">
+              <mat-icon>favorite</mat-icon>
+              {{ "wishList.title" | translate }}
+            </button>
+            <button mat-menu-item (click)="goToOrders()">
+              <mat-icon>shopping_cart</mat-icon>
+              {{ "userMenuNav.orders" | translate }}
+            </button>
+            <button
+              mat-menu-item
+              routerLink="/accedi"
+              (click)="isUserLoggedIn && logOut()"
+            >
+              <mat-icon>{{ isUserLoggedIn ? "logout" : "login" }}</mat-icon>
+              {{
+                isUserLoggedIn
+                  ? ("userMenuNav.logOut" | translate)
+                  : ("userMenuNav.logIn" | translate)
+              }}
+
+              <!-- <button mat-menu-item (click)="isUserLoggedIn && logOut()">
+                <mat-icon>{{ isUserLoggedIn ? "logout" : "login" }}</mat-icon>
+                {{
+                  isUserLoggedIn
+                    ? ("userMenuNav.logOut" | translate)
+                    : ("userMenuNav.logIn" | translate)
+                }}
+              </button> -->
+            </button>
+          </nav>
+        </mat-menu>
+      </div>
+    </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container [ngClass]="{ 'sidenav-container': isVisible }">
+    <mat-sidenav #sidenav mode="side" class="sidenav" tabindex="-1">
+      <mat-nav-list>
+        <div class="accordion">
+          <mat-accordion class="accordion__summary">
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="accordion__title">{{
+                  "header.man" | translate | uppercase
+                }}</mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="accordion__answer">
+                <a
+                  mat-menu-item
+                  *ngFor="let category of categories | async"
+                  [routerLink]="getCategoryLink(category.code, 'uomo')"
+                  (click)="
+                    updateCategory(category.code);
+                    sidenav.toggle();
+                    toggleSideNav()
+                  "
+                >
+                  {{ category.code | uppercase }}
+                </a>
+              </p>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="accordion__title">{{
+                  "header.woman" | translate | uppercase
+                }}</mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="accordion__answer">
+                <a
+                  mat-menu-item
+                  *ngFor="let category of categories | async"
+                  [routerLink]="getCategoryLink(category.code, 'donna')"
+                  (click)="
+                    updateCategory(category.code);
+                    sidenav.toggle();
+                    toggleSideNav()
+                  "
+                >
+                  {{ category.code | uppercase }}
+                </a>
+              </p>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="accordion__title"
+                  >UNISEX</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <p class="accordion__answer">
+                <a
+                  mat-menu-item
+                  *ngFor="let category of categories | async"
+                  [routerLink]="getCategoryLink(category.code, 'unisex')"
+                  (click)="
+                    updateCategory(category.code);
+                    sidenav.toggle();
+                    toggleSideNav()
+                  "
+                >
+                  {{ category.code | uppercase }}
+                </a>
+              </p>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="accordion__title">{{
+                  "header.brands" | translate | uppercase
+                }}</mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="accordion__answer">
+                <a
+                  href="#"
+                  mat-button
+                  routerLink="/brand"
+                  (click)="sidenav.toggle(); toggleSideNav()"
+                >
+                  {{ "header.brands" | translate | uppercase }}</a
+                >
+              </p>
+            </mat-expansion-panel>
+          </mat-accordion>
+          <div class="login-signup-container">
+            <button
+              class="add-button"
+              routerLink="/accedi"
+              (click)="sidenav.toggle(); toggleSideNav()"
+            >
+              {{ "mobileMenu.signupOrSignin" | translate | uppercase }}
+            </button>
+            <!-- <a routerLink="/brand" routerLink="/accedi"
+              (click)="sidenav.toggle(); toggleSideNav();">{{"mobileMenu.signup" | translate | uppercase}}</a> -->
+          </div>
+        </div>
+      </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+</div>

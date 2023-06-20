@@ -1,0 +1,52 @@
+<div class="homepage">
+  <app-slider-homepage></app-slider-homepage>
+
+  <app-homepage-category-cards></app-homepage-category-cards>
+
+  <div class="homepage__category-sliders">
+    <div class="homepage__category-sliders__slider" *ngIf="isDataReady">
+      <app-box-image
+        goTo="scarpe/uomo"
+        boxTitle="{{ 'header.man' | translate }}"
+        image="https://www.cisalfasport.it/on/demandware.static/-/Library-Sites-CisalfaSharedLibrary/default/dwaef9454f/3-UOMO/febbraio-marzo-aprile-23/hero/hero-sh-desktop-960x815-napa-23.jpg"
+        style="min-width: 600px"
+      >
+      </app-box-image>
+      <app-products-slider
+        *ngIf="isDataReady"
+        [products]="productsMan"
+        [sliderTitle]="'sliderHomepage.newArrivals' | translate"
+        style="width: 100%"
+      >
+      </app-products-slider>
+    </div>
+    <div class="homepage__category-sliders__slider">
+      <app-box-image
+        goTo="scarpe/donna"
+        boxTitle="{{ 'header.woman' | translate }}"
+        image="https://www.cisalfasport.it/on/demandware.static/-/Library-Sites-CisalfaSharedLibrary/default/dwc6fd68ca/4-DONNA/ottobre-novembre-dicembre21/widget/widget-blazer-DONNA.jpg"
+        style="min-width: 600px"
+      >
+      </app-box-image>
+      <app-products-slider
+        [products]="productsWoman"
+        [sliderTitle]="'sliderHomepage.newArrivals' | translate"
+        style="max-width: 600px"
+      ></app-products-slider>
+    </div>
+    <div class="homepage__category-sliders__slider">
+      <app-box-image
+        goTo="scarpe/unisex"
+        boxTitle="unisex"
+        image="https://www.cisalfasport.it/on/demandware.static/-/Library-Sites-CisalfaSharedLibrary/default/dw33f510bc/1-HP/febbraio-marzo-aprile-23/widget/PROMORUNNING_PE23_widget3-desktop-720x720px.jpg"
+        style="min-width: 600px"
+      >
+      </app-box-image>
+      <app-products-slider
+        [products]="productsMan"
+        [sliderTitle]="'sliderHomepage.newArrivals' | translate"
+        style="width: 100%"
+      ></app-products-slider>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div *ngIf="isLoading" class="spinner">
+  <mat-spinner diameter="50"></mat-spinner>
+</div>
+<div *ngIf="!isLoading" class="wishlist">
+  <h1>{{ "wishList.title" | translate }}</h1>
+
+  <div class="wishlist__container">
+    <app-wishlist-product-card
+      (myEvent)="deleteFromWishlist()"
+      *ngFor="let product of wishlist"
+      [product]="product"
+    ></app-wishlist-product-card>
+  </div>
+
+  <div class="wishlist__empty"></div>
+</div>

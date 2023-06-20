@@ -1,0 +1,43 @@
+@import "../../../style/common/variables.scss";
+@import "../../../style/common/mixin.scss";
+
+.homepage {
+  &__category-cards {
+    > div {
+      margin-top: -0.1rem;
+    }
+  }
+  &__category-sliders__slider {
+    margin-bottom: 10rem;
+  }
+
+  h2 {
+    font-size: $x-large;
+    font-weight: 900;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .homepage {
+    &__category-cards {
+      @include flex(flex-start, stretch);
+      > div {
+        margin-top: 0;
+      }
+    }
+    &__category-sliders__slider {
+      @include flex(flex-start, center);
+      margin-bottom: 0;
+      &:nth-child(2) {
+        flex-direction: row-reverse;
+
+        &:first-child div {
+          border: 2px solid blue;
+        }
+      }
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+}

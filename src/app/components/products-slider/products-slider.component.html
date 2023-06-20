@@ -1,0 +1,34 @@
+<div class="container__slide">
+  <div class="container__slide--h2">
+    <h2>{{ sliderTitle }}</h2>
+  </div>
+  <swiper
+    [slidesPerView]="1"
+    [spaceBetween]="10"
+    [pagination]="false"
+    [navigation]="true"
+    [breakpoints]="{
+      '300': {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      '768': {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      '900': {
+        slidesPerView: 2,
+        spaceBetween: 20
+      }
+    }"
+    class="slider"
+  >
+    <ng-template
+      swiperSlide
+      *ngFor="let product of products"
+      class="productSlider__slide"
+    >
+      <app-product-card [product]="product"></app-product-card>
+    </ng-template>
+  </swiper>
+</div>

@@ -1,0 +1,367 @@
+{
+  "greeting": "Ciao",
+  "header": {
+    "man": "uomo",
+    "woman": "donna",
+    "new": "novità",
+    "brands": "brand",
+    "sales": "offerte",
+    "organize": "ordina",
+    "price": "prezzo",
+    "genre": "genere",
+    "category": "categoria",
+    "color": "colore",
+    "allBrands": "Tutti i brand"
+  },
+  "productCartItem": {
+    "quantity": "Quantità"
+  },
+  "cookie": {
+    "h1": " Cookie policy",
+    "p1": "Utilizziamo cookie e altre tecnologie simili per offrire esperienze di acquisto e pubblicità personalizzate oltre che per analizzare il traffico sul nostro sito.",
+    "h2": "Cosa sono i cookie?",
+    "p2": "I cookie sono file di dati che possono contenere piccole quantità di informazioni e vengono memorizzati sul tuo dispositivo (computer, smartphone, ecc.) quando visiti un sito web per la prima volta. Utilizziamo i cookie quando visiti il nostro sito, ma puoi scegliere di bloccarne alcuni. Ma non dimenticare che il blocco di alcuni cookie potrebbe influire sulla tua esperienza sul nostro sito e sui servizi che possiamo offrire.",
+    "h2-2": "Come li usiamo?",
+    "p3": "Utilizziamo i cookie per:",
+    "li1": "svolgere operazioni essenziali, come la navigazione del sito",
+    "li2": "Permetterti Di Aggiungere Articoli Al Carrello O All'elenco Di Prodotti Salvati",
+    "li3": "Analizzare I Numeri E I Comportamenti Dei Visitatori, Ad Esempio Quali Pagine Vengono Visitate Di Frequente",
+    "li4": "Valutare Il Successo Di Campagne Pubblicitarie, Offerte E Comunicazioni",
+    "li5": "Indirizzare Messaggi Pubblicitari Adeguati",
+    "li6": "Capire Quali Affiliati Ci Hanno Aiutato A Raggiungere Nuovi Clienti O Hanno Promosso I Nostri Prodotti Sui Loro Siti Web",
+    "h2-3": "Quali tipi di cookie utilizziamo?",
+    "h3": "Elenco dei cookie:",
+    "p4": "Un cookie è una piccola porzione di dati (file di testo) che un sito Web, se visitato da un utente, chiede al browser di memorizzarlo sul dispositivo per ricordare le sue informazioni, quali la lingua preferita o i dati di accesso. Questi cookie sono da noi impostati e denominati cookie di prima parte. Utilizziamo inoltre cookie di terza parte - ovvero i cookie di un dominio diverso da quello del sito Web che si sta visitando - per i nostri tentativi pubblicitari e di marketing. In particolare, utilizziamo i cookie e altre tecnologie di tracciamento per i seguenti scopi:",
+    "h3-2": "Cookie Essenziali",
+    "p5": "Questi cookie sono essenziali per il corretto funzionamento del sito e consentono di navigare e utilizzare le nostre funzionalità, come 'Aggiungi al carrello' e 'Salva per dopo'. Questi cookie ci consentono anche di misurare e analizzare il modo in cui i nostri clienti utilizzano il sito, per migliorare sia le funzionalità che l'esperienza di acquisto."
+  },
+  "privacy": {
+    "h1": "Privacy policy",
+    "p1": "Condividiamo i tuoi dati con le seguenti categorie di aziende quale parte essenziale della nostra capacità di fornirti i servizi richiesti:",
+    "li1": "Società del gruppo BELLE SCARPE, dato che a volte parti diverse del nostro gruppo sono responsabili di attività diverse",
+    "li2": "Società che operano per farti ricevere i tuoi acquisti, come fornitori di servizi di pagamento, magazzini, imballatori e società di trasporto",
+    "li3": "BELLE SCARPE Brand Partners che spediscono i tuoi acquisti direttamente: specificheremo questa informazione qualora ciò dovesse applicarsi al tuo ordine",
+    "li4": "Fornitori di servizi professionali, come agenzie di marketing, partner pubblicitari e host di siti Web, che ci aiutano a gestire la nostra attività",
+    "li5": "Siti affiliati che ci aiutano a raggiungere potenziali nuovi clienti o a promuovere i nostri prodotti sui loro siti web",
+    "li6": "Agenzie di riferimento creditizio, forze dell'ordine e agenzie di prevenzione delle frodi, in modo da poter aiutare a combattere eventuali attività fraudolente",
+    "p2": "Puoi scegliere di usufruire di alcuni dei nostri servizi aggiuntivi, nel qual caso, a seconda delle tue scelte, potremmo condividere i tuoi dati con le seguenti categorie di società per soddisfare i servizi richiesti:",
+    "li7": "Siti di social media (ad esempio se scegli di usare i tuoi account social per effettuare il login su BELLE SCARPE) e altre società da te approvate",
+    "li8": "Consulenti dei prodotti per aiutarti a scegliere gli articoli giusti."
+  },
+  "termAndConditions": {
+    "h1": "Terms and Conditions",
+    "p1": "Le presenti Condizioni Generali di Vendita (di seguito Condizioni Generali) hanno validità esclusivamente tra la società BELLE SCARPE., con sede legale in Via Boccea, 496 - 00166 Roma .F. P.Iva 05352580962, Registro Imprese di Roma n.1156390 e chiunque effettui acquisti online sul sito www.cisalfasport.it. Le presenti Condizioni Generali disciplinano gli acquisti di prodotti effettuati sul Sito, conformemente alle disposizioni della Parte III, Titolo III, Capo I, del Codice del Consumo, D.lgs. n. 206/2005, modificato dal D.Lgs. n. 21/2014 e dal D.Lgs. 70/2003 sul commercio elettronico.",
+    "p2": "I prodotti proposti attraverso il Sito web sono disponibili esclusivamente per la consegna sul territorio italiano, San Marino e Stato della Città del Vaticano.",
+    "p3": "Ai fini delle presenti Condizioni Generali, per consumatore finale si intende qualsiasi persona fisica che agisce per fini estranei all’attività imprenditoriale, commerciale, artigianale o professionale eventualmente svolta.",
+    "p4": "Ai fini delle presenti Condizioni Generali, per consumatore finale si intende qualsiasi persona fisica che agisce per fini estranei all’attività imprenditoriale, commerciale, artigianale o professionale eventualmente svolta.",
+    "p5": "Belle Scarpe si riserva il diritto di rivedere e modificare le presenti Condizioni Generali in qualsiasi momento. Il Cliente sarà soggetto alle Condizioni Generali in vigore al momento dell’ordine."
+  },
+  "cartHeader": {
+    "h1": "Il tuo carrello",
+    "products": "prodotti",
+    "instead": "invece di",
+    "payOnly": "paghi solo"
+  },
+  "errorPage": {
+    "h1": "Abbiamo identificato un problema...",
+    "h3": "La pagina non esiste. Prova a pulire la cronologia del tuo browser e premi aggiorna.",
+    "h4": "Nessun risultato?",
+    "p1": "Clicca su",
+    "p2": "per tornare alla Homepage."
+  },
+  "cartInfoBox": {
+    "delivery": "metodo di consegna",
+    "homeDelivery": "consegna a domicilio",
+    "payMethod": "metodo di pagamento"
+  },
+  "coupon": "coupon e codice sconto",
+  "boxImages": {
+    "newArrives": "nuovi arrivi lifestyle",
+    "discover": "scopri le nuove collezioni"
+  },
+  "footer": {
+    "whoWeAre": "Chi Siamo",
+    "registration": "Registrati",
+    "contacts": "Contatti",
+    "serviceClient": "Servizio clienti",
+    "termAndConditions": "Termini e condizioni",
+    "privacyAndCookies": "Privacy e Cookies",
+    "returns": "Resi",
+    "bottom": "2023 Belle Scarpe SRL. P.IVA. 05593460162. Le foto dei prodotti presenti sul sito sono puramente esemplificative."
+  },
+  "preFooter": {
+    "contacts": "Contatti",
+    "help": "Help"
+  },
+  "productsList": {
+    "products": "Tutti i prodotti",
+    "noProducts": "non sono presenti prodotti",
+    "manShoes": "Scarpe da uomo",
+    "womanShoes": "Scarpe da donna",
+    "unisexShoes": "Scarpe unisex",
+    "newShoes": "Novità",
+    "shoes": "Scarpe"
+  },
+  "boxImage": {
+    "cta": "Scopri tutte le scarpe"
+  },
+  "mobileMenu": {
+    "profile": "vai al profilo",
+    "login": "accedi",
+    "signup": "Non hai un account? REGISTRATI QUI",
+    "signupOrSignin": "Accedi o registrati"
+  },
+  "singleProduct": {
+    "listedPrice": "Prezzo di Listino",
+    "sizeSelect": "seleziona taglia",
+    "addWishList": "aggiungi alla lista desideri",
+    "added": "aggiunto",
+    "sizeTable": "tabella delle taglie"
+  },
+  "infoProductBox": {
+    "delivery": "consegna gratuita",
+    "refund": "reso gratuito"
+  },
+  "accordion": {
+    "description": "Descrizione",
+    "brand": "Marca",
+    "details": "Dettagli"
+  },
+  "sliderHomepage": {
+    "newArrivals": "nuovi arrivi",
+    "conversePromo": "nuova collezione converse",
+    "lookNow": "scopri ora",
+    "theBest": "migliori sneaker unisex"
+  },
+  "userMenuNav": {
+    "profile": "Profilo",
+    "logIn": "Accedi",
+    "orders": "Ordini",
+    "logOut": "Esci"
+  },
+  "cartNavMenu": {
+    "cart": "Carrello",
+    "size": "taglia",
+    "quantity": "quantità",
+    "total": "TOTALE"
+  },
+  "orderList": {
+    "order": "Ordine",
+    "products": "Prodotti",
+    "total": "Totale",
+    "orderer": "Intestatario",
+    "size": "Taglia"
+  },
+  "userInfo": {
+    "personalData": "dati personali",
+    "addresses": "indirizzi",
+    "title": "Account Personale",
+    "faq": "FAQ",
+    "myAccount": "IL MIO ACCOUNT",
+    "orderList": "Lista Ordini"
+  },
+  "personalData": {
+    "personalData": "i tuoi dati personali",
+    "personalDetails": "Dati anagrafici",
+    "name": "nome",
+    "lastName": "cognome",
+    "birdthDate": "data di nascita",
+    "accountData": "Dati account",
+    "email": "email"
+  },
+  "customerCare": {
+    "contacts": "Contatti",
+    "delivery": "Spedizioni",
+    "returnsAndRefunds": "Resi e Rimborsi",
+    "hi": "Ciao",
+    "help": "come possiamo aiutarti",
+    "forYou": "Consigliati per te",
+    "p": "Nella sezione FAQ puoi trovare più velocemente la risposta alle tue domande. Inoltre, potrai seguire la tua spedizione oppure avere tutte le informazioni necessarie sui resi e rimborsi.",
+    "service": "Servizio Clienti"
+  },
+  "contacts": {
+    "h3": "Se hai difficoltà o dubbi relativi allo shop online, il nostro Servizio Clienti è a tua disposizione. Scopri come contattarci cliccando",
+    "span": "quì"
+  },
+  "delivery": {
+    "h3": "tempi e costi di spedizione",
+    "p1": "La spedizione è gratuita per la maggior parte degli articoli per ordini superiori a 28,90 €.",
+    "p2": "Per quelli il cui importo è inferiore a 28,90 €, il costo di spedizione è di 4,95 €.",
+    "p3": "Gli articoli da lunga distanza non rientrano questa offerta. Gli articoli devono essere spediti da un magazzino più lontano, perciò è previsto un costo di consegna da lunga distanza di 4,95 €.",
+    "p4": "Se il valore dell'ordine è inferiore al valore minimo di 28,90 € e comprende anche un articolo per la consegna a distanza, si dovrà pagare solo la tariffa di consegna standard, non entrambe.",
+    "p5": "In caso di reso o di annullamento dell'ordine, la tariffa di consegna standard e la tariffa di consegna da lunga distanza vengono rimborsate solo in caso di restituzione dell'intero ordine, non in caso di restituzione parziale."
+  },
+  "returnAndRefund": {
+    "h1": "Resi e Rimborsi",
+    "p1": "Se hai effettuato un reso il rimborso avverrà entro 14 giorni dalla data di consegna del pacco al corriere. Non appena il reso sarà ricevuto e controllato ti invieremo un'email di conferma. Nel caso tu abbia pagato le spese per la spedizione standard e decida di rendere l'ordine per intero, queste ti verranno rimborsate.",
+    "h3-1": "Hai Pagato In Contanti Alla Consegna?",
+    "p2": "Durante la procedura di reso online potrai scegliere il metodo di rimborso che preferisci, tra nota di credito o bonifico bancario.",
+    "p3": "Nel caso in cui scegliessi il bonifico, sarà necessario inserire le tue coordinate bancarie (nome completo dell’intestatario del conto, IBAN e BIC).",
+    "h3-2": "Hai pagato con Paypal?",
+    "p4": "Riceverai la cifra relativa agli articoli resi sullo stesso account Paypal."
+  },
+  "faq": {
+    "refunds": "Rimborso",
+    "a1": "Se hai effettuato un reso il rimborso avverrà entro 14 giorni dalla data di consegna del pacco al corriere.Non appena il reso sarà ricevuto e controllato ti invieremo un'email di conferma. Nel caso tu abbia pagato le spese per la spedizione standard e decida di rendere l'ordine per intero, queste ti verranno rimborsate.",
+    "payment": "Metodi di pagamento",
+    "a2": "È possibile pagare gli ordini con carta di credito, Postepay, Paypal, in contanti alla consegna oppure con il tuo credito.",
+    "payPal": "PayPal",
+    "a3": "Se scegli di pagare con questo metodo sarai diretto al sito di PayPal.Se hai già un conto PayPal, identificati con il tuo indirizzo email e password e conferma il pagamento.Se non hai un conto PayPal, puoi procedere con un conto ospite o crearne uno.Il pagamento sarà registrato entro pochi minuti e il tuo ordine sarà immediatamente processato.Prima di procedere al pagamento ti verrà richiesto di accettare la sezione Termini e condizioni di PayPal.",
+    "returnsAndRefunds": "Resi e Rimborsi",
+    "a4": "Puoi effettuare il reso gratuito dei tuoi ordini entro 100 giorni. Potrai prenotare il ritiro direttamente a casa tua oppure consegnarlo in uno dei 12.000 uffici postali abilitati. Potrai anche utilizzare la rete Punto Poste, composta da 10.000 tabaccherie o negozi convenzionati e da 350 locker distribuiti su tutto il territorio nazionale."
+  },
+  "addresses": {
+    "address": "Indirizzo",
+    "country": "Paese",
+    "zipCode": "Cap",
+    "nameAndLastName": "Nome e cognome",
+    "firstName": "NOME",
+    "lastName": "COGNOME",
+    "telephone": "telefono",
+    "deliveryInstructions": "instruzioni per il corriere",
+    "yourAddresses": "I tuoi indirizzi",
+    "emptyAddress": "Non hai inserito nessun indirizzo",
+    "email": "email",
+    "birthDate": "data di nascita"
+  },
+  "terms": "Accetta i termini",
+  "emailRule": {
+    "notValid": "L'indirizzo email non è valido",
+    "already": "Esiste già un account con questa email"
+  },
+  "passwordRules": {
+    "rule": "La password deve contenere",
+    "eight": "Almeno 8 caratteri",
+    "lowercase": "Almeno 1 carattere minuscolo",
+    "uppercase": "Almeno 1 carattere maiuscolo",
+    "number": "Almeno 1 numero",
+    "special": "Almeno 1 carattere speciale"
+  },
+  "changeUserDataForm": {
+    "email": "email",
+    "first_name": "nome",
+    "last_name": "cognome",
+    "birthDate": "data di nascita",
+    "newPassword": "nuova password"
+  },
+  "wishList": {
+    "title": "Lista desideri",
+    "empty": "La tua lista desideri è vuota"
+  },
+  "orders": {
+    "title": "I Tuoi Ordini"
+  },
+  "cart": {
+    "title": "Carrello"
+  },
+  "login": {
+    "email": "E-MAIL",
+    "password": "PASSWORD",
+    "signup": "REGISTRATI",
+    "signin": "ACCEDI",
+    "telephone": "TELEFONO"
+  },
+  "recapCart": {
+    "h2": "Riepilogo ordine",
+    "total": "Totale"
+  },
+  "search": {
+    "hasResults": "Risultati della ricerca per:",
+    "noResults": "Nessun risultato di ricerca",
+    "p1": "La ricerca ",
+    "p2": "non ha prodotto alcun risultato. Prova nuovamente la ricerca con questi accorgimenti:",
+    "li1": "Controlla attentamente la parola cercata",
+    "li2": "Limita la ricerca a una o due parole",
+    "li3": "Cerca di usare termini meno specifici e più generici",
+    "h2": "Continua a esplorare il nostro sito web"
+  },
+  "button": {
+    "save": "salva credenziali",
+    "addToCart": "aggiungi al carrello",
+    "more": "scopri di più",
+    "cancel": "annulla",
+    "cancelFilters": "cancella filtri",
+    "editData": "modifica dati",
+    "addAddress": "aggiungi indirizzo",
+    "saveAddress": "salva indirizzo",
+    "goToCheckout": "procedi al checkout",
+    "seeItems": "visualizza articoli"
+  },
+  "checkout": {
+    "deliveryAddress": "Indirizzo Di Spedizione",
+    "products": "Prodotti",
+    "home": "Casa",
+    "paymentOptions": "Opzioni Di Pagamento",
+    "creditCard": "Carta di credito",
+    "klarna": "Paga in 3 rate con Klarna",
+    "buy": "Acquista Ora",
+    "newAddress": "Aggiungi un nuovo indirizzo",
+    "quantity": "Qtà"
+  },
+  "toastify": {
+    "changeUserData": {
+      "dataError": "Dati non validi",
+      "refreshTokenError": "Devi effettuare di nuovo il login",
+      "dataSuccess": "Dati modificati",
+      "logoutError": "Errore nel Logout"
+    },
+    "loginForm": {
+      "loginSuccess": "Login",
+      "loginError": "Dati non validi",
+      "credentialsError": "Credentiali non valide"
+    },
+    "mobileMenu": {
+      "logoutError": "Errore nel Logout",
+      "logoutSuccess": "Logout"
+    },
+    "signupForm": {
+      "signupSuccess": "Registrazione effettuata",
+      "signupError": "Qualcosa è andato storto",
+      "signupEmailError": "Email esistente"
+    },
+    "userMenuNav": {
+      "logoutError": "Errore nel Logout",
+      "logoutSuccess": "Logout"
+    },
+    "cart": {
+      "cartUpdateSuccess": "Quantità modificata",
+      "cartUpdateError": "Errore nella modifica della quantità",
+      "cartDeleteSuccess": "Prodotto eliminato",
+      "cartDeleteError": "Errore nella eliminazione del prodotto",
+      "couponCheckSuccess": "Coupon applicato",
+      "couponCheckError": "Coupon non valido",
+      "couponInvalidField": "Devi inserire un coupon",
+      "couponValueError": "Totale troppo basso per applicare il coupon",
+      "couponNoProductError": "Non sono presenti prodotti nel carrello",
+      "noLoggedError": "Devi effettuare il login"
+    },
+    "checkout": {
+      "addressError": "Devi selezionare un undirizzo di consegna",
+      "paymentError": "Devi selezionare un metodo di pagamento",
+      "orderSuccess": "Ordine effettuato",
+      "orderError": "Ops, qualcosa è andato storto"
+    },
+    "singleProduct": {
+      "addCartSuccess": "Aggiunto al carrello",
+      "addCartError": "Qualcosa è andato storto nell'aggiunta al carrello",
+      "addCartSizeError": "Devi selezionare una taglia",
+      "addWishlistSuccess": "Aggiunto alla wishlist",
+      "addWishlistError": "Qualcosa è andato storto nell'aggiunta alla wishlist"
+    }
+  },
+  "lang": "it",
+  "colors": {
+    "green": "VERDE",
+    "blue": "BLU",
+    "grey": "GRIGIO",
+    "liliac": "LILLA",
+    "multicolor": "MULTICOLORE",
+    "black": "NERO",
+    "pink": "ROSA",
+    "red": "ROSSO",
+    "white": "BIANCO"
+  },
+  "filters": {
+    "none": "Nessuno"
+  }
+}

@@ -1,0 +1,75 @@
+<swiper
+  [slidesPerView]="1"
+  [spaceBetween]="50"
+  [navigation]="true"
+  [pagination]="{ clickable: true }"
+  [scrollbar]="{ draggable: true }"
+  [autoplay]="true"
+>
+  <ng-template swiperSlide class="swiperSlide">
+    <picture>
+      <source
+        media="(max-width: 650px)"
+        srcSet="../../../assets/images/mobile/nuoviArrivi-mobile.jpeg"
+      />
+      <img src="../../../assets/images/desktop/nuoviArrivi-desktop.jpeg" />
+    </picture>
+    <div class="swiperSlide__info">
+      <div class="swiperSlide__info--link">
+        <a routerLink="scarpe/novita">
+          <h2 onClick="{goToNewArrivals}">
+            {{ "sliderHomepage.newArrivals" | translate }}
+          </h2></a
+        >
+      </div>
+      <app-button
+        [buttonStyle]="'default-button'"
+        label="Look Now"
+      ></app-button>
+    </div>
+  </ng-template>
+
+  <ng-template swiperSlide class="swiperSlide"
+    ><picture>
+      <source
+        media="(max-width: 650px)"
+        srcSet="../../../assets/images/mobile/converse-promo-mobile.jpg"
+      />
+      <img src="../../../assets/images/desktop/converse-promo-desktop.jpg" />
+    </picture>
+    <div class="swiperSlide__info">
+      <div class="swiperSlide__info--link">
+        <a routerLink="brand/converse">
+          <h2 onClick="{goToNewArrivals}" routerLink="brand/converse">
+            {{ "sliderHomepage.conversePromo" | translate }}
+          </h2></a
+        >
+      </div>
+      <app-button
+        [buttonStyle]="'default-button'"
+        label="Look Now"
+      ></app-button></div
+  ></ng-template>
+
+  <ng-template swiperSlide class="swiperSlide"
+    ><picture>
+      <source
+        media="(max-width: 650px)"
+        srcSet="../../../assets/images/mobile/promorunning-mobile.jpg"
+      />
+      <img src="../../../assets/images/desktop/promorunning-desktop.jpg" />
+    </picture>
+    <div class="swiperSlide__info">
+      <div class="swiperSlide__info--link">
+        <a routerLink="scarpe/unisex/sneakers">
+          <h2 onClick="{goToNewArrivals}" routerLink="scarpe/unisex/sneakers">
+            {{ "sliderHomepage.theBest" | translate }}
+          </h2></a
+        >
+      </div>
+      <app-button
+        [buttonStyle]="'default-button'"
+        label="Look Now"
+      ></app-button></div
+  ></ng-template>
+</swiper>

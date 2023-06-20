@@ -1,0 +1,73 @@
+<div class="single-product" *ngIf="product">
+  <header>
+    <div class="header__container">
+      <p class="header__category">{{ product.category }}</p>
+      <p class="header__price">{{ product.listed_price }} €</p>
+      <!-- {state.selectedSize
+        ? `${state.product.listed_price}€`
+        : `${t("singleProduct.listedPrice")} ${
+            state.product?.listed_price
+          }€`} -->
+    </div>
+    <h2 class="header__brand">
+      <a onClick="{goToBrandPage}">{{ product?.brand }}</a>
+    </h2>
+    <p class="header__name">{{ product?.name }}</p>
+  </header>
+
+  <div class="info__container">
+    <!-- <SingleProductSlider images="{state.product.images}" /> -->
+    <app-single-product-slider
+      [images]="productImages"
+    ></app-single-product-slider>
+    <!-- <div class="slider">
+          <Box sx={{ width: "100%" }}>
+            <Skeleton variant="rectangular" height={700} />
+          </Box>
+        </div> -->
+
+    <div class="info">
+      <select
+        class="info__select-size"
+        name="sizes"
+        (change)="handleSizeSelect($event)"
+      >
+        <option selected disabled>
+          {{ "singleProduct.sizeSelect" | translate }}
+        </option>
+        <option *ngFor="let size of product?.productSizes">
+          {{ size.eu }}
+        </option>
+      </select>
+
+      <app-info-product-box></app-info-product-box>
+
+      <app-button
+        label="{{ 'button.addToCart' | translate }}"
+        [buttonStyle]="'default-button'"
+        (click)="addToCart()"
+      ></app-button>
+
+      <div class="info__container">
+        <p class="info__wishlist">
+          {{ "singleProduct.addWishList" | translate }}
+          <span
+            (click)="addToWishlist(product.id)"
+            [ngStyle]="{ color: isInWishlist ? 'red' : 'white' }"
+          >
+            &#10084;
+          </span>
+        </p>
+      </div>
+
+      <!-- <AccordionItem
+        productDescription="{state.product?.description}"
+        productBrand="{state.product?.brand}"
+      /> -->
+      <app-accordion-item
+        title="Descrizione"
+        description="{{ product?.description }}"
+      ></app-accordion-item>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,97 @@
+@import "../../../style/common/variables.scss";
+@import "../../../style/common/mixin.scss";
+
+.brandList {
+  margin: auto;
+  padding: 4.5rem 2rem;
+
+  &__container {
+    @include flex();
+    padding: 1%;
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+  &__grid {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: start;
+    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5rem;
+    row-gap: 2rem;
+    width: 90%;
+  }
+
+  &__h1 {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+  }
+
+  &__h3 {
+    margin-bottom: 1.5rem;
+    font-size: $large;
+  }
+  &__brands {
+    @include flex(flex-start, flex-start, column);
+    gap: 0.8rem;
+
+    li {
+      width: 100%;
+      text-align: center;
+    }
+
+    li a {
+      color: $grey-normal;
+      font-size: $medium;
+    }
+
+    li a:hover {
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: $orange;
+    }
+  }
+}
+
+.cell {
+  h3 {
+    border-bottom: 2px solid $grey-normal;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .brandList__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .brandList__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 400px) {
+  .brandList__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      text-align: left;
+    }
+  }
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding-bottom: 1rem;
+}

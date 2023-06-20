@@ -1,0 +1,34 @@
+<!-- <div class="brandList">
+    <h1 class="brandList__h1">{{ "header.allBrands" | translate }}</h1>
+
+    <div class="brandList__container">
+        <ul class="brandList__grid">
+            <h1>{{ "header.allBrands" | translate }}</h1>
+            <div class="cell">
+                <h3 class="brandList__h3">{{ brands.letter }}</h3>
+                <ul class="brandList__brands">
+                    <li>
+                        <a>{{ brands.brand }}</a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+</div> -->
+
+<div class="brandList">
+    <h1 class="brandList__h1">{{ "header.allBrands" | translate }}</h1>
+
+    <div class="brandList__container">
+        <ul class="brandList__grid">
+            <div class="cell" *ngFor="let letter of letters">
+                <h3 class="brandList__h3">{{ letter }}</h3>
+                <ul class="brandList__brands">
+                    <li *ngFor="let brand of getBrandsByLetter(letter)">
+                        <a>{{ brand.brand }}</a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+</div>

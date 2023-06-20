@@ -1,0 +1,53 @@
+.product-card {
+  cursor: pointer;
+  max-width: 350px;
+  height: 100%;
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__info {
+    padding: 0 1rem;
+    color: darkgrey;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 600px) {
+      gap: 1rem;
+    }
+
+    &__first-col {
+      &__category {
+        font-size: small;
+        font-weight: 300;
+      }
+
+      &__brand {
+        margin-top: 0.6rem;
+        font-size: small;
+        font-weight: 700;
+      }
+
+      &__name {
+        font-size: medium;
+        margin-top: 0.2rem;
+        font-weight: 300;
+      }
+    }
+
+    &__second-col {
+      &__full-price {
+        font-size: small;
+        text-decoration: line-through;
+      }
+
+      &__price {
+        margin-top: 0.2rem;
+        font-size: medium;
+        color: orange;
+      }
+    }
+  }
+}

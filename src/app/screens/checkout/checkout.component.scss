@@ -1,0 +1,232 @@
+.checkout {
+  margin: 0 auto;
+  max-width: 80rem;
+
+  header {
+    margin-bottom: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      // display: none;
+      height: 4rem;
+    }
+  }
+
+  .__checkout-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .__container {
+    padding: 2rem;
+    background-color: white;
+    margin-bottom: 1.5rem;
+
+    h2 {
+      font-size: small;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    .__add-address {
+      display: inline-block;
+      padding-top: 4rem;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .__left {
+    width: 70%;
+    button {
+      display: none;
+    }
+  }
+
+  .__delivery-address {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+
+    label {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    address {
+      font-style: normal;
+    }
+
+    .__name {
+      display: inline-block;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 0.3rem;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    input[type="radio"] {
+      cursor: pointer;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .__payment-method {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+
+    input {
+      cursor: pointer;
+      margin-right: 1rem;
+    }
+
+    img {
+      width: 4rem;
+      margin-right: 0.5rem;
+    }
+
+    label {
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  .__right {
+    width: 30%;
+    button {
+      margin: 2rem 0 4rem;
+    }
+  }
+
+  .filter-button {
+    display: block;
+    background-color: darkgrey;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+
+    width: 100%;
+    font-size: small;
+    padding: 1.2rem;
+
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+
+    transition: all 150ms ease;
+
+    &:hover {
+      background-color: grey;
+    }
+  }
+}
+
+.checkout-product {
+  color: grey;
+  font-size: small;
+
+  .__image {
+    margin-right: 2rem;
+  }
+
+  img {
+    width: 8rem;
+  }
+
+  .__price {
+    font-size: small;
+    margin-bottom: 0.7rem;
+  }
+
+  .__price,
+  .__color-size,
+  .__quantity {
+    font-weight: 700;
+  }
+
+  .__name,
+  .__color-size,
+  .__quantity {
+    margin-bottom: 0.4rem;
+  }
+
+  .__color-size {
+    div:first-child {
+      margin-right: 2rem;
+    }
+  }
+}
+
+.recap-container {
+  // width: 600px;
+
+  text-align: center;
+  color: white;
+
+  border-radius: 0.5rem;
+  padding: 4rem;
+  background-color: darkgray;
+
+  &__header {
+    font-size: large;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 600px) {
+      font-size: medium;
+    }
+  }
+
+  &__total {
+    padding: 1rem;
+    position: relative;
+
+    font-size: medium;
+    text-transform: uppercase;
+    margin-top: 4rem;
+    width: 100%;
+
+    @media screen and (max-width: 600px) {
+      font-size: small;
+    }
+
+    .price {
+      font-weight: 700;
+      font-size: large;
+      color: orange;
+
+      @media screen and (max-width: 600px) {
+        font-size: medium;
+      }
+    }
+
+    .underline {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -1rem;
+      height: 2px;
+      width: 100%;
+      background-color: white;
+    }
+  }
+}

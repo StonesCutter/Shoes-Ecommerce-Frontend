@@ -1,0 +1,85 @@
+@import "../../../style/common/variables.scss";
+@import "../../../style/common/mixin.scss";
+
+.identity-wrapper {
+  margin-top: 4rem;
+  h1 {
+    font-size: $x-large;
+    text-align: center;
+  }
+
+  @media screen and (max-width: "600px") {
+    margin-top: 2rem;
+  }
+}
+
+.identity-container {
+  background-color: $white;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  padding: 6rem 4rem;
+  padding-top: 0;
+  background-color: $white;
+
+  width: 600px;
+
+  @media screen and (max-width: "600px") {
+    width: 100%;
+    padding: 0 2rem 6rem 2rem;
+  }
+
+  &__options {
+    margin-top: 2rem;
+    width: 100%;
+
+    font-size: $medium;
+
+    @include flex(space-around);
+
+    &__signup,
+    &__login {
+      position: relative;
+      padding: 3rem 4rem;
+      cursor: pointer;
+
+      color: $black;
+      opacity: 0.5;
+
+      &--shown {
+        opacity: 1;
+      }
+
+      .link:hover {
+        color: $black;
+      }
+
+      &.underline::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $black;
+      }
+    }
+  }
+
+  &__form-wrapper {
+    padding: 0 4rem;
+    margin-top: 4rem;
+
+    @media screen and (max-width: "600px") {
+      padding: 0;
+      margin-top: 5rem;
+    }
+  }
+}
+
+.background-grey {
+  background-color: $grey-light;
+}
+
+.sign-container {
+  margin-top: 20px;
+}

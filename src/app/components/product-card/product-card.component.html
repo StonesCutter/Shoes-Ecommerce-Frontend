@@ -1,0 +1,23 @@
+<article class="product-card" onClick="">
+  <picture>
+    <img class="product-card__image" src="{{ product.image_preview }}" alt="" />
+  </picture>
+  <div class="product-card__info">
+    <div class="product-card__info__first-col">
+      <h4 class="product-card__info__first-col__category">
+        {{ product.category }}
+      </h4>
+      <h4 class="product-card__info__first-col__brand">
+        {{ product.brand | uppercase }}
+      </h4>
+      <h3 class="product-card__info__first-col__name">
+        {{ product.name | uppercase }}
+      </h3>
+    </div>
+    <div class="product-card__info__second-col">
+      <div class="product-card__info__second-col__price">
+        da {{ product.starting_price }} €
+      </div>
+    </div>
+  </div>
+</article>

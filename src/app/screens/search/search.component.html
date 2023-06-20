@@ -1,0 +1,12 @@
+<div class="products-list">
+    <!-- <div class="card-container"> -->
+    <div class="product-card-container" *ngIf="isDataReady">
+        <app-product-card *ngFor="let product of productsCategory" [product]="product"
+            [routerLink]="getProductLink(product.id)"></app-product-card>
+    </div>
+    <!-- </div> -->
+    <h2 class="products-list__no-products" *ngIf="productsCategory.length === 0">{{ "productsList.noProducts" |
+        translate }}</h2>
+
+    <app-paginator (paginationModified)="onPaginationModified($event)"></app-paginator>
+</div>

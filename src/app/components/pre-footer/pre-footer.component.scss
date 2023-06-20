@@ -1,0 +1,31 @@
+@import "../../../style/common/variables.scss";
+@import "../../../style/common/mixin.scss";
+
+.pre-footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pre-footer-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: $xx-large !important; /* Add !important to prioritize the font size */
+  color: $grey-normal;
+  margin: 6rem auto;
+}
+
+.icon {
+  transform: scale(2);
+  margin-bottom: 40px;
+  color: $orange;
+}
+
+@media screen and (min-width: 900px) {
+  .pre-footer-container {
+    flex-direction: row;
+  }
+}

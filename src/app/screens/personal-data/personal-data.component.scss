@@ -1,0 +1,84 @@
+@import "../../../style/common/variables.scss";
+
+.personalData {
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    padding: 2% 3%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 50rem;
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $x-large;
+  }
+
+  h2 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  ul {
+    margin-top: 2.5rem;
+    text-align: left;
+    width: 100%;
+    margin: 0 3%;
+  }
+
+  li {
+    margin: 1.5rem 0;
+    color: $grey-normal;
+    font-size: $medium;
+    text-transform: uppercase;
+    text-align: left;
+
+    span {
+      color: $black;
+      margin-left: 1rem;
+      text-transform: capitalize;
+    }
+  }
+
+  .personalData__email {
+    // text-transform: lowercase;
+  }
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 60%;
+  margin-top: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .personalData {
+    flex-basis: 70%;
+    &__container {
+      flex-direction: row;
+      align-items: start;
+      justify-content: space-between;
+
+      ul {
+        h2 {
+          margin-bottom: 2rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .container__button {
+    width: 100%;
+  }
+}

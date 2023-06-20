@@ -1,0 +1,126 @@
+<div class="checkout">
+  <header>
+    <img
+      src="../../../assets/images/checkout/belle-scarpe-logo-grigio.png"
+      alt="logo"
+    />
+    <h1>CHECKOUT</h1>
+    <img
+      src="../../../assets/images/checkout/digicert.png"
+      alt="digicert logo"
+    />
+  </header>
+
+  <div class="__checkout-content">
+    <div class="__left">
+      <div class="__container">
+        <h2></h2>
+        <ul>
+          <li class="__delivery-address" *ngFor="let address of addresses">
+            <label>
+              <address>
+                <p>{{ address.name_surname }}</p>
+                <p>{{ address.street_address }}</p>
+                <p>{{ address.country }}</p>
+                <p>{{ address.telephone }}</p>
+              </address>
+            </label>
+            <input
+              type="radio"
+              name="delivery-address"
+              (click)="logValue(address.id)"
+            />
+          </li>
+        </ul>
+        <a>ADD A NEW ADDRESS</a>
+      </div>
+      <div class="__container">
+        <h2 *ngIf="paymentSelected">SELECT A PAYMENT METHOD</h2>
+        <ul>
+          <li class="__payment-method">
+            <input
+              #mastercard
+              type="radio"
+              name="payment-methods"
+              id="payment-methods-1"
+              value="mastercard"
+              (click)="paymentMethod(mastercard.value)"
+            />
+            <label htmlFor="payment-methods-1">
+              <img
+                src="../../../assets/images/checkout/mastercard.png"
+                alt=""
+              />
+              <p>Mastercard</p>
+            </label>
+          </li>
+          <li class="__payment-method">
+            <input
+              type="radio"
+              name="payment-methods"
+              id="payment-methods-2"
+              #paypal
+              value="paypal"
+              (click)="paymentMethod(paypal.value)"
+            />
+            <label htmlFor="payment-methods-2">
+              <img src="../../../assets/images/checkout/paypal.png" alt="" />
+              <p>PayPal</p>
+            </label>
+          </li>
+          <li class="__payment-method">
+            <input
+              type="radio"
+              name="payment-methods"
+              id="payment-methods-3"
+              #klarna
+              value="klarna"
+              (click)="paymentMethod(klarna.value)"
+            />
+            <label htmlFor="payment-methods-3">
+              <img
+                src="../../../assets/images/checkout/klarnainstalments.png"
+                alt=""
+              />
+              <p>Klarna</p>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <app-button
+        [buttonStyle]="'filter-button'"
+        label="BUY NOW"
+        (click)="handleClick()"
+      ></app-button>
+    </div>
+    <div class="__right">
+      <div class="__container">
+        <article class="checkout-product" *ngFor="let product of products">
+          <div class="__image">
+            <img src="{{ product.image }}" alt="" />
+          </div>
+          <div class="__info">
+            <div class="__price">
+              PRICE: {{ product.sellingItemTotalPrice }}
+            </div>
+            <div class="__name">NAME: {{ product.name }}</div>
+            <div class="__color-size">
+              <div>SIZE: {{ product.size }}</div>
+            </div>
+            <div>
+              QUANTITY
+              <span class="__quantity">{{ product.quantity }}</span>
+            </div>
+          </div>
+        </article>
+        <div class="recap-container">
+          <div class="recap-container__total">
+            <h2>RECAP TOTAL</h2>
+            <span class="price">EURO: {{ totalPrice }}</span>
+            <span class="underline"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

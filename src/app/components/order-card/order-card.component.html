@@ -1,0 +1,42 @@
+<article class="product-card" onClick="">
+  <picture>
+    <img class="product-card__image" src="{{ product.image }}" alt="" />
+  </picture>
+  <div class="product-card__info">
+    <button (click)="addNewItem(product.item_id)">
+      ELIMINA PRODOTTO COMPLETO
+    </button>
+    <div class="product-card__info__first-col">
+      <h4 class="product-card__info__first-col__category">
+        Name: {{ product.name }}
+      </h4>
+      <h4 class="product-card__info__first-col__brand">
+        Brand: {{ product.brand | uppercase }}
+      </h4>
+      <h3 class="product-card__info__first-col__name">
+        Total price: {{ product.sellingItemTotalPrice | currency : "EUR" }}
+      </h3>
+    </div>
+    <div class="product-card__info__second-col">
+      QUANTITY: {{ product.quantity }}
+      <!-- <select>
+        <option
+          #quantity
+          value="{{ product.quantity }}"
+          (change)="selectValue(quantity.value)"
+        >
+          {{ product.quantity }}
+        </option>
+      </select> -->
+      <!-- <select>
+        <option
+          *ngFor="let option of generateOptions(product.quantity)"
+          [value]="option"
+          (change)="selectValue($event.target.value)"
+        >
+          {{ option }}
+        </option>
+      </select> -->
+    </div>
+  </div>
+</article>

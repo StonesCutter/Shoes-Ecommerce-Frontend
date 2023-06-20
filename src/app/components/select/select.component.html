@@ -1,0 +1,20 @@
+<mat-form-field>
+    <!-- <mat-label class="{{ selectStyle }}">{{ label | translate }}</mat-label> -->
+    <mat-label [ngClass]="selectStyle" *ngIf="label">{{ label | translate | uppercase }}</mat-label>
+    <mat-select [(value)]="selected" (selectionChange)="onOptionSelected($event.value)">
+        <mat-option *ngFor="let option of content" [value]="option">
+            {{ option | translate | uppercase }}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+
+<!-- <mat-form-field>
+    <mat-label class="{{ selectStyle }}">{{ label }}</mat-label>
+    <mat-select [(value)]="selected">
+        <mat-option>None</mat-option>
+        <mat-option value="option1">Option 1</mat-option>
+        <mat-option value="option2">Option 2</mat-option>
+        <mat-option value="option3">Option 3</mat-option>
+    </mat-select>
+</mat-form-field> -->

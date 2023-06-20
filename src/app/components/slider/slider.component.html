@@ -1,0 +1,15 @@
+<div class="slider-container">
+    <mat-slider min="20" max="200" step="10" showTickMarks discrete [displayWith]="formatLabel" class="slider"
+        (change)="onPriceRangeChange()">
+        <input value="20" matSliderStartThumb>
+        <input value="200" matSliderEndThumb>
+    </mat-slider>
+</div>
+
+
+<!-- <div class="slider-container">
+    <mat-slider min="20" max="200" step="10" showTickMarks discrete [displayWith]="formatLabel" class="slider">
+        <input value="20" matSliderStartThumb>
+        <input value="200" matSliderEndThumb>
+    </mat-slider>
+</div> -->

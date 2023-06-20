@@ -1,0 +1,20 @@
+<header class="cart-header">
+  <div class="cart-header-container">
+    <div class="infos">
+      <h2>IL TUO CARRELLO</h2>
+      <p>{{ totalProducts }} PRODOTTI</p>
+    </div>
+    <div class="infos">
+      <p>PAGHI SOLO</p>
+      <p>Euro {{ totalPrice | currency : "EUR" }}</p>
+    </div>
+    <div class="cart-header-buttons">
+      <button class="filter-button" (click)="goToCheckout()">
+        PROCEDI AL CHECKOUT
+      </button>
+      <button class="filter-button paypal">
+        <img src="../../../assets/images/cart/PayPal.svg.png" />
+      </button>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,38 @@
+@import "../../../style/common/variables.scss";
+
+.infoBox {
+  // border: 1px solid $grey-normal;
+  border-radius: 2px;
+  padding: 2rem;
+  margin: 2rem 0;
+  width: 100%;
+  max-height: 180px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 10%;
+
+    span {
+      margin-right: 1rem;
+      font-size: $large;
+      display: flex;
+      align-items: center;
+      color: $grey-normal;
+    }
+
+    p {
+      font-size: $medium;
+      color: $grey-normal;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .infoBox {
+    min-width: 400px;
+  }
+}

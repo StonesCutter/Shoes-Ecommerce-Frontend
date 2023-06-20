@@ -1,0 +1,71 @@
+@import "../../../style/common/variables.scss";
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+@import "swiper/css/effect-fade";
+
+.swiperSlide {
+  // border: 2px solid red;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  &__info {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+
+    h2 {
+      color: $white;
+      text-transform: uppercase;
+      text-shadow: 0 0 12px rgba(0, 0, 0, 0.333);
+      font-weight: 600;
+      text-align: left;
+      line-height: 1.2;
+      cursor: pointer;
+    }
+  }
+
+  &__info--link:hover h2 {
+    color: $orange;
+    transition: all 0.3s;
+  }
+
+  .default-button {
+    margin-top: 15px;
+  }
+}
+
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  // background-color: $white;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+
+// All bullet
+span.swiper-pagination-bullet.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+// .swiper-button-next,
+// .swiper-button-prev {
+//     color: $white !important;
+//     border-radius: 50%;
+//     padding: 1.5rem;
+//     opacity: 0.9;
+// }
+
+// MEDIA QUERIES
+
+@media screen and (min-width: 768px) {
+  .swiperSlide__info {
+    left: 10%;
+  }
+}

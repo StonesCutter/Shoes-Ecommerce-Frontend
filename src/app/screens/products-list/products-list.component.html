@@ -1,0 +1,37 @@
+<div class="products-list">
+    <h1 *ngIf="type==='w'">{{"productsList.womanShoes" | translate}}: {{currentCategory}}</h1>
+    <h1 *ngIf="type==='m'">{{"productsList.manShoes" | translate}}: {{currentCategory}}</h1>
+    <div class="select-container">
+        <app-select label='header.organize' [selectStyle]="'category-select'" [content]="options1"
+            (optionSelected)="onNewFilterApplied($event)"></app-select>
+
+        <mat-form-field>
+            <mat-label class="category-select">{{ 'header.price' | translate }}</mat-label>
+            <mat-select>
+                <mat-option>
+                    <div>
+                        <app-slider (priceRangeChanged)="onPriceFilterApplied($event)"></app-slider>
+                    </div>
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <app-select label='header.brands' [selectStyle]="'category-select'" [content]="brandsNames"
+            (optionSelected)="onBrandFilterApplied($event)"></app-select>
+        <app-select label='header.color' [selectStyle]="'category-select'" [content]="colors"
+            (optionSelected)="onColorFilterApplied($event)"></app-select>
+    </div>
+    <!-- <div class="card-container"> -->
+    <div class="product-card-container" *ngIf="isDataReady">
+        <app-product-card *ngFor="let product of productsCategory" [product]="product"
+            [routerLink]="getProductLink(product.id)"></app-product-card>
+    </div>
+    <!-- </div> -->
+    <h2 class="products-list__no-products" *ngIf="productsCategory.length === 0">{{ "productsList.noProducts" |
+        translate }}</h2>
+    <!-- <app-paginator (pageSelected)="onPageSelected($event)"
+        (pageSizeSelected)="onPaginationModified($event)"></app-paginator> -->
+    <app-paginator (paginationModified)="onPaginationModified($event)"></app-paginator>
+
+
+</div>

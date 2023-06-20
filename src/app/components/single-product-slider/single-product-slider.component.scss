@@ -1,0 +1,36 @@
+@import "../../../style/common/variables.scss";
+@import "swiper/css";
+@import "swiper/css/free-mode";
+@import "swiper/css/navigation";
+@import "swiper/css/thumbs";
+
+.mySwiper {
+  height: 80%;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.mySwiper2 {
+  height: 20%;
+  padding: 10px 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .swiper__container {
+    // width: 50%;
+    max-width: 500px;
+  }
+}

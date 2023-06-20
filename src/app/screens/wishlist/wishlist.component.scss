@@ -1,0 +1,42 @@
+@import "../../../style/common/variables.scss";
+
+.spinner {
+  position: absolute;
+  left: 50%;
+}
+
+.wishlist {
+  h1 {
+    text-align: center;
+    font-size: $xx-large;
+    margin-top: 6rem;
+  }
+
+  &__empty {
+    margin-bottom: 6rem;
+
+    p {
+      text-align: center;
+      font-size: $medium;
+      color: $grey-normal;
+    }
+  }
+}
+
+.wishlist__container {
+  // border: 2px solid red;
+  padding: 2%;
+  margin: 6rem auto;
+}
+
+@media screen and (min-width: 700px) {
+  .wishlist__container {
+    // border: 2px solid red;
+    padding: 2%;
+    margin: 6rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    row-gap: 2rem;
+  }
+}

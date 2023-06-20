@@ -1,0 +1,83 @@
+@import "../../../style/common/variables.scss";
+
+.homepage-category-cards {
+  display: flex;
+  .category-card {
+    position: relative;
+  }
+  .category-card-content-wrapper {
+    position: absolute;
+    top: 15%;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .homepage-category-cards {
+    display: flex;
+    flex-direction: column;
+    .category-card {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      align-items: center;
+    }
+    .category-card-content-wrapper {
+      position: absolute;
+      bottom: 25%;
+      left: 10%;
+    }
+  }
+}
+
+.category-card {
+  //   text-align: center;
+  width: calc(100% / 3);
+  img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+
+    z-index: -1;
+  }
+}
+
+.margin-top {
+  margin-top: 1.4rem;
+}
+
+.default-button {
+  display: block;
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+
+  color: #fff;
+  text-transform: uppercase;
+  background-color: $orange;
+  border: 1px solid $orange;
+  padding: 1rem 4rem;
+
+  font-size: $medium;
+  border-radius: 0.5rem;
+
+  transition: all 150ms ease-in;
+
+  @media screen and (max-width: 600px) {
+    padding: 1.2rem 3.6rem;
+    font-size: $x-small;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: $x-small;
+    padding: 0.8rem 2.2rem;
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: $orange;
+  }
+}

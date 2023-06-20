@@ -1,0 +1,41 @@
+<!-- <form [formGroup]="contactForm" *ngIf="contact" (ngSubmit)="save()" class="form"> -->
+<form [formGroup]="loginForm" (ngSubmit)="save()">
+  <div class="login-form">
+    <h2>{{ "login.email" | translate }}</h2>
+    <mat-form-field appearance="fill">
+      <!-- <mat-label>Enter your email</mat-label> -->
+      <input
+        matInput
+        placeholder="email@example.com"
+        [formControl]="email"
+        required
+      />
+      <mat-error *ngIf="email.invalid">{{ getErrorMessageEmail() }}</mat-error>
+    </mat-form-field>
+    <h2>{{ "login.password" | translate }}</h2>
+    <mat-form-field appearance="fill">
+      <!-- <mat-label>Enter your password</mat-label> -->
+      <input
+        matInput
+        [type]="hide ? 'password' : 'text'"
+        formControlName="password"
+        required
+      />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="hide = !hide"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide"
+      >
+        <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+      <mat-error *ngIf="password.invalid">{{
+        getErrorMessagePassword()
+      }}</mat-error>
+    </mat-form-field>
+
+    <button type="submit" class="add-button">LOGIN</button>
+  </div>
+  <!-- <button type="submit"  class="button-style">{{ 'loginForm.loginSuccess' | translate }}</button> -->
+</form>

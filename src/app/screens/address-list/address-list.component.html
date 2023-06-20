@@ -1,0 +1,55 @@
+<div class="address">
+  <h2>
+    {{ "addresses.yourAddresses" | translate }}
+  </h2>
+  <div
+    *ngFor="let address of addresses; let i = index"
+    class="address__container__list"
+    key="{data?.id}"
+  >
+    <h3>{{ "addresses.address" | translate }} n. {{ i + 1 }}</h3>
+    <ul>
+      <li>
+        <p class="address__p">{{ "addresses.country" | translate }}:</p>
+        <span>{{ address?.country ?? "n/d" }} </span>
+      </li>
+      <li>
+        <p class="address__p">{{ "addresses.zipCode" | translate }}:</p>
+        <span>{{ address?.zipcode ?? "n/d" }}</span>
+      </li>
+      <li>
+        <p class="address__p">{{ "addresses.nameAndLastName" | translate }}:</p>
+        <span>{{ address?.name_surname ?? "n/d" }}</span>
+      </li>
+      <li>
+        <p class="address__p">{{ "addresses.address" | translate }}:</p>
+        <span>{{ address?.street_address ?? "n/d" }}</span>
+      </li>
+      <li>
+        <p class="address__p">{{ "addresses.telephone" | translate }}:</p>
+        <span>{{ address?.telephone ?? "n/d" }}</span>
+      </li>
+      <li>
+        <p class="address__p">
+          {{ "addresses.deliveryInstructions" | translate }}:
+        </p>
+        <span>{{ address?.instructions ?? "n/d" }}</span>
+      </li>
+      <p class="delete" (click)="deleteAddress(address?.id)">Delete</p>
+    </ul>
+  </div>
+  <div>
+    <!-- <p>t("addresses.emptyAddress").</p> -->
+  </div>
+
+  <div class="address__container">
+    <app-button
+      label="{{ 'button.addAddress' | translate }}"
+      buttonStyle="default-button"
+      (click)="openDialog()"
+    >
+    </app-button>
+    <!-- <Button label={state.showForm ? t("button.cancel") : t("button.addAddress")}
+    handleClick={toggleForm} buttonStyle="default-button" /> -->
+  </div>
+</div>

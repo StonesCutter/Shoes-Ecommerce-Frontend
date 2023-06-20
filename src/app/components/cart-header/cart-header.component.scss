@@ -1,0 +1,62 @@
+.cart-header {
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: end;
+  .infos {
+    margin-right: 50px;
+  }
+}
+
+.cart-header-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cart-header-buttons {
+  display: flex;
+  align-items: center;
+  button {
+    min-width: 300px;
+    max-height: 40px;
+  }
+}
+
+.filter-button {
+  display: block;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border: 0;
+
+  width: 200px;
+  font-size: small;
+  padding: 1.2rem;
+  margin-right: 5px;
+
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+
+  transition: all 150ms ease;
+
+  &:hover {
+    background-color: grey;
+  }
+}
+
+.paypal {
+  background-color: #ffc439;
+  transition: all 150ms ease;
+  border: 0;
+
+  &:hover {
+    background-color: #ffc439;
+    box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    height: 20px;
+  }
+}

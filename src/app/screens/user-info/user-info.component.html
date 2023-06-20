@@ -1,0 +1,29 @@
+<div class="userInfo">
+  <h1>{{ "userInfo.myAccount" | translate }}</h1>
+  <div class="outlet">
+    <nav class="userInfo__navlink">
+      <p>
+        <a class="customer__list" routerLink="/area-personale/indirizzi">{{
+          "userInfo.addresses" | translate
+        }}</a>
+      </p>
+      <p>
+        <a class="customer__list" routerLink="/area-personale/">{{
+          "userInfo.personalData" | translate
+        }}</a>
+      </p>
+      <p>
+        <a class="customer__list" routerLink="/area-personale/lista-ordini">{{
+          "userInfo.orderList" | translate
+        }}</a>
+      </p>
+      <p>
+        <a class="customer__list" routerLink="/area-personale/lista-desideri"
+          >WishList</a
+        >
+      </p>
+      <!-- Qua manca la route del cart -->
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+</div>

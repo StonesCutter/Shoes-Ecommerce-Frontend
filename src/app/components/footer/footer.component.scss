@@ -1,0 +1,140 @@
+@import "../../../style/common/variables.scss";
+@import "../../../style/common/mixin.scss";
+
+#footer {
+  padding: 0 1rem;
+  background-color: $grey-footer;
+  color: $white;
+
+  a {
+    color: $white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .footer__top {
+    padding: 4rem 0 2rem;
+    border-bottom: 1px solid $white;
+    font-size: $xx-small;
+
+    nav {
+      margin: 0 auto;
+      width: 70%;
+      max-width: 120rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+
+      .footer__top__list {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .footer__top__socials {
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 50%;
+    font-size: $xx-large;
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin-right: 2rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &.footer__top__socials__facebook:hover {
+        color: $facebook-color;
+      }
+
+      &.footer__top__socials__instagram:hover {
+        color: $instagram-color;
+      }
+
+      &.footer__top__socials__youtube:hover {
+        color: $youtube-color;
+      }
+    }
+  }
+
+  header {
+    font-size: $small;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .footer__bottom {
+    padding: 2rem;
+    text-align: center;
+    color: #e0e0e0;
+    font-size: $x-small;
+  }
+
+  .social-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 2rem;
+  }
+
+  .flag {
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .flag:hover {
+    transform: scale(1.2);
+  }
+
+  .flag-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .bottom-text {
+    font-size: 12px;
+  }
+  // Responsive styles...
+
+  @media (min-width: 768px) {
+    #footer {
+      padding: 0 10rem;
+
+      .footer__top {
+        nav {
+          .footer__top__list {
+            width: auto;
+          }
+        }
+
+        .footer__top__socials {
+          justify-content: center;
+
+          a {
+            margin-right: 2rem;
+
+            &:last-of-type {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+@import "../../../style/common/variables.scss";
+
+.card {
+  margin-bottom: 8rem;
+  padding: 1%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  position: relative;
+  cursor: pointer;
+
+  &__absolute {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__container {
+    display: flex;
+    // align-items: stretch;
+    padding: 2%;
+    height: 150px;
+
+    img {
+      width: 25%;
+      object-fit: cover;
+      margin-right: 2rem;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    button {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      z-index: 999;
+    }
+  }
+
+  &__sellingPrice {
+    color: $orange;
+    font-size: $medium;
+  }
+
+  &__initialPrice {
+    text-decoration: line-through;
+    margin-left: 2rem;
+    font-size: $x-small;
+  }
+
+  &__brand {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: $grey-normal;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-size: $medium;
+      line-height: 1.1;
+      margin: 1rem 0;
+    }
+
+    &--detail {
+      display: flex;
+
+      p {
+        margin-right: 1rem;
+        color: $grey-normal;
+        font-weight: 600;
+        font-size: $x-small;
+      }
+    }
+  }
+}
+
+.card:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+}
+
+.card__icon {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+
+  span {
+    padding: 1rem;
+    display: flex;
+    font-size: $medium;
+    color: $grey-footer;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  span:hover {
+    color: $orange;
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .card__container {
+    img {
+      max-width: 40%;
+    }
+  }
+
+  .card {
+    margin-bottom: 3rem;
+
+    &__sellingPrice {
+      font-size: $large;
+      margin-bottom: 2rem;
+    }
+
+    &__initialPrice {
+      font-size: $small;
+    }
+
+    &__header {
+      span {
+        font-size: $large;
+      }
+    }
+
+    &__info {
+      margin-top: 2rem;
+
+      h2 {
+        // margin: 2rem 0;
+        font-size: $large;
+      }
+
+      p {
+        font-size: $medium;
+      }
+    }
+  }
+}

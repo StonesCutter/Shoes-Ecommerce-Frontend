@@ -1,0 +1,367 @@
+{
+  "greeting": "Hello",
+  "header": {
+    "man": "man",
+    "woman": "woman",
+    "new": "new arrivals",
+    "brands": "brands",
+    "sales": "sales",
+    "organize": "organize",
+    "price": "price",
+    "genre": "genre",
+    "category": "category",
+    "color": "color",
+    "allBrands": "All brands"
+  },
+  "productCartItem": {
+    "quantity": "Quantity"
+  },
+  "cookie": {
+    "h1": " Cookie policy",
+    "p1": "We use cookies and other similar technologies to provide personalized shopping experiences and advertising, as well as to analyze traffic on our site.",
+    "h2": "What are Cookies?",
+    "p2": "Cookies are data files that may contain small amounts of information and are stored on your device (computer, smartphone, etc.) when you visit a website for the first time. We use cookies when you visit our site, but you can choose to block some of them. But don't forget that blocking some cookies may affect your experience on our site and the services we can offer.",
+    "h2-2": "How do we use them?",
+    "p3": "We use cookies to:",
+    "li1": "perform essential operations, such as site navigation",
+    "li2": "Allow you to add items to your shopping cart or saved products list",
+    "li3": "Analyze visitor numbers and behaviors, such as which pages are visited frequently",
+    "li4": "Evaluate the success of advertising campaigns, offers and communications",
+    "li5": "Target Appropriate Advertising Messages",
+    "li6": "Understanding Which Affiliates Have Helped Us Reach New Customers Or Promoted Our Products On Their Websites",
+    "h2-3": "What types of cookies do we use?",
+    "h3": "List of cookies:",
+    "p4": "A cookie is a small piece of data (text file) that a website, if visited by a user, asks the browser to store on the device to remember information such as the preferred language or access data. These cookies are set by us and called first party cookies. We also use third-party cookies - i.e. cookies from a different domain than the website you are visiting - for our advertising and marketing efforts. In particular, we use cookies and other tracking technologies for the following purposes:",
+    "h3-2": "Essentials Cookie",
+    "p5": "These cookies are essential for the site to function properly and allow you to navigate and use our features, such as 'Add to basket' and 'Save for later'. These cookies also allow us to measure and analyze how our customers use the site, to improve both functionality and the shopping experience."
+  },
+  "privacy": {
+    "h1": "Privacy policy",
+    "p1": "We share your data with the following categories of companies as an essential part of our ability to provide you with the services you request:",
+    "li1": "BELLE SCARPE group company, as sometimes different parts of our group are responsible for different activities",
+    "li2": "Companies who work to get your purchases to you, such as payment service providers, warehouses, packers and transport companies",
+    "li3": "BELLE SCARPE Brand Partners who ship your purchases directly: we will specify this information should this apply to your order",
+    "li4": "Professional service providers, such as marketing agencies, advertising partners and website hosts, who help us run our business",
+    "li5": "Affiliate sites that help us reach potential new customers or promote our products on their websites",
+    "li6": "Credit reference agencies, law enforcement and fraud prevention agencies, so they can help fight any fraudulent activity",
+    "p2": "You can choose to take advantage of some of our additional services, in which case, depending on your choices, we may share your data with the following categories of companies to fulfill the requested services:",
+    "li7": "Social media sites (for example if you choose to use your social accounts to login to BELLE SCARPE) and other companies approved by you",
+    "li8": "Product advisors to help you choose the right items."
+  },
+  "termAndConditions": {
+    "h1": "Terms and Conditions",
+    "p1": "These General Conditions of Sale (hereinafter General Conditions) are valid only between the company BELLE SCARPE, with registered office in Via Boccea, 496 - 00166 Rome .F. VAT number 05352580962, Rome Company Register n.1156390  and any person  who makes online purchases on the website www.cisalfasport.it . These General Conditions govern the purchases of products made on the Site, in accordance with the provisions of Part III, Title III, Chapter I, of the Consumer Code, Legislative Decree no. 206/2005, modified by Legislative Decree no. 21/2014 and by Legislative Decree 70/2003 on electronic commerce.",
+    "p2": "The products offered through the Website are available exclusively for delivery in Italy, San Marino and the Vatican City State.",
+    "p3": "For the purposes of these General Conditions, the term final consumer means any natural person who acts for purposes unrelated to any entrepreneurial, commercial, craft or professional activity carried out.",
+    "p4": "Please read them carefully, the Information on Cookies and the information on Personal Data Protection before using this Website. We inform you that the use of this Site or the transmission of an order through it implies acceptance of these Conditions.",
+    "p5": "Belle Scarpe reserves the right to revise and modify these General Conditions at any time. The Customer will be subject to the General Conditions in force at the time of the order."
+  },
+  "cartHeader": {
+    "h1": "Your cart",
+    "products": "products",
+    "instead": "instead of",
+    "payOnly": "pay only"
+  },
+  "errorPage": {
+    "h1": "We found an error...",
+    "h3": "This page likely not exist. Try to clean the history browser and reload the page.",
+    "h4": "Any Results?",
+    "p1": "Click on",
+    "p2": "to go Homepage."
+  },
+  "cartInfoBox": {
+    "delivery": "delivery method",
+    "homeDelivery": "home delivery",
+    "payMethod": "pay method"
+  },
+  "coupon": "coupon and discount code",
+  "boxImages": {
+    "newArrives": "new lifestyle arrives",
+    "discover": "discover new collections"
+  },
+  "footer": {
+    "whoWeAre": "Who We Are",
+    "registration": "Registration",
+    "contacts": "Contacts",
+    "serviceClient": "Client service",
+    "privacyAndCookies": "Privacy and Cookies",
+    "termAndConditions": "Term and conditions",
+    "returns": "Returns",
+    "bottom": "2023 Belle Scarpe SRL. P.IVA. 05593460162. All images about products are examples."
+  },
+  "preFooter": {
+    "contacts": "Contacts",
+    "help": "Help"
+  },
+  "productsList": {
+    "products": "All Products",
+    "noProducts": "no products found",
+    "manShoes": "Man shoes",
+    "womanShoes": "Woman shoes",
+    "unisexShoes": "Unisex shoes",
+    "newShoes": "New arrivals",
+    "shoes": "Shoes"
+  },
+  "boxImage": {
+    "cta": "Discover all the shoes"
+  },
+  "singleProduct": {
+    "listedPrice": "Listed Price",
+    "sizeSelect": "size select",
+    "addWishList": "add to wishlist",
+    "added": "already added",
+    "sizeTable": "size table"
+  },
+  "infoProductBox": {
+    "delivery": "free delivery",
+    "refund": "free refund"
+  },
+  "accordion": {
+    "description": "Description",
+    "brand": "Brand",
+    "details": "Details"
+  },
+  "sliderHomepage": {
+    "newArrivals": "new arrivals",
+    "conversePromo": "new converse collection",
+    "lookNow": "look now",
+    "theBest": "best unisex sneakers"
+  },
+  "mobileMenu": {
+    "profile": "go to profile",
+    "signin": "login",
+    "signup": "Don't have an account? REGISTER HERE",
+    "signupOrSignin": "Login or Sign up"
+  },
+  "userMenuNav": {
+    "profile": "Profile",
+    "logIn": "Log In",
+    "orders": "Orders",
+    "logOut": "Log Out"
+  },
+  "cartNavMenu": {
+    "cart": "Cart",
+    "size": "size",
+    "quantity": "quantity",
+    "total": "TOTAL AMOUNT"
+  },
+  "orderList": {
+    "order": "Order",
+    "products": "Products",
+    "total": "Total",
+    "orderer": "Orderer",
+    "size": "Size"
+  },
+  "userInfo": {
+    "personalData": "personal data",
+    "addresses": "addresses",
+    "title": "Personal Account",
+    "faq": "FAQ",
+    "myAccount": "MY ACCOUNT",
+    "orderList": "order list"
+  },
+  "personalData": {
+    "personalData": "your personal data",
+    "personalDetails": "Personal details",
+    "name": "name",
+    "lastName": "last name",
+    "birdthDate": "birdth date",
+    "accountData": "Account data",
+    "email": "email"
+  },
+  "customerCare": {
+    "contacts": "Contacts",
+    "delivery": "Delivery",
+    "returnsAndRefunds": "Returns and Refunds",
+    "hi": "Hi,",
+    "help": "How can we help you?",
+    "forYou": "For you",
+    "p": "In the FAQ section you can find the answer to your questions faster. Furthermore, you will be able to follow your shipment or have all the necessary information on returns and refunds.",
+    "service": "Service Client"
+  },
+  "contacts": {
+    "h3": "If you have difficulties or concerns related to the online shop, our Service Customers is at your disposal. Find out how to contact us by clicking",
+    "span": "here"
+  },
+  "delivery": {
+    "h3": "shipping times and costs",
+    "p1": "Shipping is free on most items for orders over 28,90 €.",
+    "p2": "For those whose amount is less than €28.90, the shipping cost is €4.95.",
+    "p3": "Long haul items are not eligible for this offer. Items need to be shipped from a warehouse further away, so there is a long distance delivery charge of €4.95.",
+    "p4": "If the order value is less than the minimum value of €28.90 and it also includes an item for remote delivery, you will only have to pay the standard delivery rate, not both.",
+    "p5": "In the event of an order return or cancellation, the standard delivery fee and the long distance delivery fee are refunded only if you return the entire order, not if you return part of it."
+  },
+  "returnAndRefund": {
+    "h1": "Return and Refunds",
+    "p1": "If you have made a return, the refund will be made within 14 days from the date the package was delivered to the courier. As soon as the return has been received and checked we will send you a confirmation email. If you have paid the standard shipping costs and decide to return the order in full, you will be refunded.",
+    "h3-1": "Did you pay cash on delivery?",
+    "p2": "During the online return procedure, you can choose the refund method you prefer, between credit note or bank transfer.",
+    "p3": "If you choose the bank transfer, you will need to enter your bank details (full name of the account holder, IBAN and BIC).",
+    "h3-2": "Dd you pay with PayPal?",
+    "p4": "You will receive the amount relating to the returned items on the same Paypal account."
+  },
+  "faq": {
+    "refunds": "Refunds",
+    "a1": "If you have made a return, the refund will be made within 14 days from the date the package was delivered to the courier. As soon as the return has been received and checked, we will send you a confirmation email. If you have paid the standard shipping costs and decide to return the order in full, you will be refunded.",
+    "a2": "Orders can be paid by credit card, Postepay, Paypal, cash on delivery or with your credit.",
+    "payment": "Payment",
+    "a3": "If you choose to pay with this method you will be directed to the PayPal site. If you already have a PayPal account, identify yourself with your email address and password and confirm the payment. If you don't have a PayPal account, you can proceed with a guest account or create one .Payment will be registered within a few minutes and your order will be processed immediately.Before proceeding to payment you will be asked to accept the PayPal Terms and Conditions section.",
+    "payPal": "PayPal",
+    "returnsAndRefunds": "Returns and Refunds",
+    "a4": "You can return your orders for free within 100 days. You can book the collection directly to your home or deliver it to one of the 12,000 authorized post offices. You can also use the Punto Poste network, made up of 10,000 tobacconists or affiliated shops and 350 lockers distributed throughout the national territory."
+  },
+  "addresses": {
+    "address": "Address",
+    "country": "Country",
+    "zipCode": "Zip Code",
+    "nameAndLastName": "Name and Last name",
+    "firstName": "FIRST NAME",
+    "lastName": "LAST NAME",
+    "telephone": "Telephone",
+    "deliveryInstructions": "Delivery Instructions",
+    "yourAddresses": "Your addresses",
+    "emptyAddress": "Empty Addresses",
+    "email": "email",
+    "birthDate": "birthdate"
+  },
+  "terms": "Agree terms",
+  "emailRule": {
+    "notValid": "Email address is not valid",
+    "already": "Already Exist"
+  },
+  "passwordRules": {
+    "rule": "Password must have",
+    "eight": "At leat 8 character string",
+    "lowercase": "At least 1 lowercase character string",
+    "uppercase": "At least 1 uppercase character string",
+    "number": "At least 1 number",
+    "special": "At least 1 special character string"
+  },
+  "changeUserDataForm": {
+    "email": "email",
+    "first_name": "first name",
+    "last_name": "last name",
+    "birthDate": "birthdate",
+    "newPassword": "new password"
+  },
+  "wishList": {
+    "title": "Wishlist",
+    "empty": "Wishlist is empty"
+  },
+  "orders": {
+    "title": "Your Orders"
+  },
+  "cart": {
+    "title": "Cart"
+  },
+  "login": {
+    "email": "E-MAIL",
+    "password": "PASSWORD",
+    "signup": "SIGN UP",
+    "signin": "SIGN IN",
+    "telephone": "TELEPHONE"
+  },
+  "recapCart": {
+    "h2": "Order summary",
+    "total": "Total"
+  },
+  "search": {
+    "hasResults": "Search results for:",
+    "noResults": "No search results",
+    "p1": "Your search ",
+    "p2": " has returned no results. Try to search again with these tricks:",
+    "li1": "Check the search word carefully",
+    "li2": "Limit your search to one or two words",
+    "li3": "Try to use less specific and more general terms",
+    "h2": "Keep exploring our website"
+  },
+  "button": {
+    "save": "save credentials",
+    "addToCart": "add to cart",
+    "more": "more",
+    "cancel": "cancel",
+    "cancelFilters": "delete filters",
+    "editData": "edit data",
+    "addAddress": "add address",
+    "saveAddress": "save address",
+    "goToCheckout": "go to checkout",
+    "seeItems": "see items"
+  },
+  "checkout": {
+    "deliveryAddress": "Delivery Address",
+    "products": "Products",
+    "home": "Home",
+    "paymentOptions": "Payment Options",
+    "creditCard": "Credit Card",
+    "klarna": "Pay in 3 installments with Klarna",
+    "buy": "Buy Now",
+    "newAddress": "Add a new Address",
+    "quantity": "Qty"
+  },
+  "toastify": {
+    "changeUserData": {
+      "dataError": "Data not valid",
+      "refreshTokenError": "You must login again",
+      "dataSuccess": "Data modified",
+      "logoutError": "Logout Error"
+    },
+    "loginForm": {
+      "loginSuccess": "Login",
+      "loginError": "Data not valid",
+      "credentialsError": "Credentials not valid"
+    },
+    "mobileMenu": {
+      "logoutError": "Logout Error",
+      "logoutSuccess": "Logout"
+    },
+    "signupForm": {
+      "signupSuccess": "Signup succeded",
+      "signupError": "Signup error",
+      "signupEmailError": "Email already used"
+    },
+    "userMenuNav": {
+      "logoutError": "Logout Error",
+      "logoutSuccess": "Logout"
+    },
+    "cart": {
+      "cartUpdateSuccess": "Modified quantity",
+      "cartUpdateError": "Error updating quantity",
+      "cartDeleteSuccess": "Product deleted",
+      "cartDeleteError": "Error deleting product",
+      "couponCheckSuccess": "Coupon applied",
+      "couponCheckError": "Invalid coupon",
+      "couponInvalidField": "Must insert a coupon",
+      "couponValueError": "Total too low for apply coupon",
+      "couponNoProductError": "There are no present products in the cart",
+      "noLoggedError": "Must login"
+    },
+    "checkout": {
+      "addressError": "Must select a delivery address",
+      "paymentError": "Must select a payment method",
+      "orderSuccess": "Order done",
+      "orderError": "Ops, something went wrong"
+    },
+    "singleProduct": {
+      "addCartSuccess": "Added to cart",
+      "addCartError": "Something went wrong adding to cart",
+      "addCartSizeError": "Must select a size",
+      "addWishlistSuccess": "Added to wishlist",
+      "addWishlistError": "Somenting went wrong adding to wishlist"
+    }
+  },
+  "lang": "en",
+  "colors": {
+    "green": "GREEN",
+    "blue": "BLUE",
+    "grey": "GREY",
+    "liliac": "LILIAC",
+    "multicolor": "MULTICOLOR",
+    "black": "BLACK",
+    "pink": "PINK",
+    "red": "RED",
+    "white": "WHITE"
+  },
+  "filters": {
+    "none": "None"
+  }
+}

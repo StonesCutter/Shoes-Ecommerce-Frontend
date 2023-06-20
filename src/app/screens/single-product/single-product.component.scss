@@ -1,0 +1,125 @@
+@import "../../../style/common/variables.scss";
+
+.single-product {
+  padding: 4.5rem 2rem 2rem;
+  header {
+    margin-bottom: 4rem;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__category {
+    color: $grey-normal;
+    font-size: $x-small;
+    text-transform: uppercase;
+  }
+
+  .header__price {
+    color: $orange;
+    font-size: $large;
+  }
+
+  .header__brand {
+    margin: 1.4rem 0;
+    font-size: $medium;
+  }
+
+  .header__name {
+    color: $grey-normal;
+    text-transform: uppercase;
+    font-size: x-large;
+  }
+}
+
+.heart {
+  color: yellow;
+}
+
+.slider {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3%;
+
+  .info__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p:hover {
+    color: $black;
+  }
+
+  p:hover > span {
+    transform: scale(1.2);
+    transition: all 0.3s;
+  }
+
+  &__wishlist {
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: $grey-normal;
+    text-transform: uppercase;
+
+    span {
+      font-size: $large;
+      display: inline-flex;
+      margin-left: 1rem;
+      color: $instagram-color;
+    }
+  }
+}
+
+.info__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__select-size {
+  border: 2px solid $orange;
+  border-radius: 0.5rem;
+  font-size: $small;
+  text-transform: capitalize;
+  padding: 0.5rem;
+  margin: 3rem 0 1rem 0;
+}
+
+@media screen and (min-width: 650px) {
+  .single-product {
+    padding: 4.5rem 8rem 2rem;
+    .info__container {
+      // Questa spacca flex row tutto, fa zoom infinito
+      flex-direction: row;
+      width: 100%;
+    }
+    .slider {
+      width: 40%;
+    }
+
+    .info {
+      // border: 2px solid red;
+      width: 60%;
+      margin: 0 2%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &__p {
+        margin: 2rem 0;
+        font-size: 2rem;
+      }
+    }
+  }
+}

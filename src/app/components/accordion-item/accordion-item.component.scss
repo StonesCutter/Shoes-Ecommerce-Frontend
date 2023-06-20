@@ -1,0 +1,37 @@
+@import "../../../style/common/variables.scss";
+
+.accordion {
+  // border: 2px solid red;
+  padding: 2% 0;
+  min-width: 400px;
+  // max-width: 400px;
+
+  &__title {
+    font-size: $small;
+    color: $grey-footer;
+  }
+
+  &__answer {
+    font-size: $small;
+    line-height: 1.5;
+    // padding-top: 0.7rem;
+    color: $grey-footer;
+  }
+
+  &__summary {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
+  &__details {
+    margin-top: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .accordion {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+}

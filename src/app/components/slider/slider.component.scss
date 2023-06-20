@@ -1,0 +1,22 @@
+.slider-container {
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: center;
+  margin: 0 auto;
+}
+
+.slider-values {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.slider-values span {
+  font-size: 14px;
+}
+
+.slider {
+  margin-top: 30px;
+}

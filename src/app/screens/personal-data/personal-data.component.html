@@ -1,0 +1,44 @@
+<div class="personalData">
+  <h1>
+    {{ "personalData.personalData" | translate }}
+  </h1>
+  <h2>{{ "personalData.personalDetails" | translate }}</h2>
+
+  <ul>
+    <li>
+      {{ "personalData.name" | translate }}:<span>{{
+        userData?.first_name
+      }}</span>
+    </li>
+    <li>
+      {{ "personalData.lastName" | translate }}:<span>{{
+        userData?.last_name
+      }}</span>
+    </li>
+    <li>
+      {{ "personalData.birdthDate" | translate }}:<span>{{
+        userData?.birth_date | date : "dd/MM/yyyy"
+      }}</span>
+    </li>
+  </ul>
+
+  <h2>{{ "personalData.accountData" | translate }}</h2>
+  <ul>
+    <li>
+      {{ "personalData.email" | translate }}:
+      <span class="personalData__email" style="text-transform: lowercase">{{
+        userData?.email
+      }}</span>
+    </li>
+  </ul>
+
+  <!-- {state.showForm && <ChangeUserDataForm toggleForm="{toggleForm}" />} -->
+  <div class="container__button">
+    <app-button
+      label="{{ 'button.editData' | translate }}"
+      buttonStyle="default-button"
+    ></app-button>
+    <!-- <Button label={state.showForm ? t("button.cancel") : t("button.editData")}
+    handleClick={toggleForm} buttonStyle="default-button" /> -->
+  </div>
+</div>
