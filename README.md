@@ -2,12 +2,22 @@
 E-commerce web application for shoes (Front-end part) developed with **Angular**. This is just a part of the project. It also includes a Back-office section, created with **React JS**. The backend was developed by the backend team and communicates with both frontend and backoffice through API calls.
 
 ## Description
-Here are listed the functionalities for every screen of the application
+Here are listed the functionalities of the application
+
+- **Registration and login** of an user
+- **Update personal informations** : name, addresses, payment method, orders list
+- **Browsing and searching products** : search bar, filtering
+- **Cart** : add a product to the cart
+- **Purchase** : complete the order
+- **Wishlist** : add a favourite product to the wishlist
 
 ## Libraries used
 
 - **i18n** - languages
-- **Material UI** - UI components
+- **Angular material** - UI components
+- **Angular forms** - forms
+- **Angular router** - routing
+and others
 
 ## Some images
 ![image](https://github.com/StonesCutter/Shoes-Ecommerce-Frontend/assets/56195722/92978379-6c59-4995-9df2-94dc2853c00b)
