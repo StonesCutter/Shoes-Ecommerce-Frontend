@@ -17,7 +17,7 @@ Here are listed the functionalities of the application
 - **Angular material** - UI components
 - **Angular forms** - forms
 - **Angular router** - routing
-and others
+- and others
 
 ## Some images
 ![image](https://github.com/StonesCutter/Shoes-Ecommerce-Frontend/assets/56195722/92978379-6c59-4995-9df2-94dc2853c00b)
